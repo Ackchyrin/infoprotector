@@ -8,7 +8,7 @@ window.addEventListener('scroll', function() {
 
 document.addEventListener("DOMContentLoaded", function() {
     const sections = document.querySelectorAll(".menuScroll");
-    const menuItems = document.querySelectorAll(".header-menu__item");
+    const menuItems = document.querySelectorAll(".header-menu__item-scroll");
 
     // Функция, которая определяет, находится ли элемент в видимой области окна
     function isInViewport(element) {
@@ -28,7 +28,7 @@ document.addEventListener("DOMContentLoaded", function() {
         // Находим активный пункт меню
         sections.forEach(section => {
             const sectionId = section.getAttribute("id");
-            const menuItem = document.querySelector(`.header-menu__item[data-section="${sectionId}"]`);
+            const menuItem = document.querySelector(`.header-menu__item-scroll[data-section="${sectionId}"]`);
             if (isInViewport(section)) {
                 activeMenuItem = menuItem;
             }
