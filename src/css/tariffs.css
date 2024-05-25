@@ -1,0 +1,168 @@
+.tariffs{
+    margin: 80px auto 0 150px;
+    max-width: 1620px;
+    width: 100%;
+}
+
+.tariffs-title{
+    font-size: 64px;
+    font-weight: 500;
+    line-height: 75.84px;
+    letter-spacing: 0.01em;
+    color: white;
+}
+
+.tariffs-list__info{
+    display: flex;
+    gap: 15px;
+    justify-content: right;
+}
+
+.tariffs-list__info-item{
+    background-color: #28333A;
+    padding: 5px 15px;
+    border-radius: 15px;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 28.44px;
+    letter-spacing: 0.01em;
+    color: white;
+    max-width: 254px;
+    width: 100%;
+    text-align: center;
+}
+
+.tariffs-list__main{
+    background-color: white;
+    border-radius: 15px;
+    margin-top: 5px;
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+    gap: 20px;
+}
+
+.tariffs-list__main-title{
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 28.44px;
+    letter-spacing: 0.01em;
+    color: #1E272E;
+    max-width: 800px;
+    width: 100%;
+}
+
+.tariffs-list__main-info{
+    display: flex;
+    gap: 20px;
+    width: 100%;
+}
+
+.tariffs-list__main-info span{
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 28.44px;
+    letter-spacing: 0.01em;
+    color: #1E272E;
+    width: 100%;
+    text-align: center;
+}
+
+.tariffs-list__items{
+    margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    overflow: hidden;
+}
+
+.tariffs-list__items-item{
+    padding: 15px;
+    border-radius: 15px;
+    background-color: #28333A;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.tariffs-list__item-title{
+    max-width: 800px;
+    width: 100%;
+    display: flex;
+    gap: 15px;
+    color: white;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 23.7px;
+    letter-spacing: 0.01em;
+    align-items: center;
+}
+
+.tariffs-list__title-hover{
+    position: relative;
+    display: flex;
+}
+
+.tariffs-list__title-hover svg{
+    cursor: pointer;
+}
+
+.tariffs-list__title-hover span{
+    display: none;
+    position: absolute;
+    width: 370px;
+    background-color: white;
+    padding: 20px;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 23.7px;
+    letter-spacing: 0.01em;
+    color: #1E272E;
+    border-radius: 15px;
+    left: 50px;
+    top: 0;
+}
+
+.tariffs-list__item-info{
+    display: flex;
+    gap: 20px;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.tariffs-list__item-info svg.deactive{
+    display: none;
+}
+
+.tariffs-list__title-hover:hover span{
+    display: block;
+}
+
+.tariffs-open{
+    text-decoration: none;
+    background-color: #FEC400;
+    border-radius: 15px;
+    padding: 15px 25px 15px 45px;
+    text-align: center;
+    cursor: pointer;
+    transition: .4s;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 28.44px;
+    letter-spacing: 0.01em;
+    color: #1E272E;
+    width: fit-content;
+    margin: 20px auto 0;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.tariffs-open svg{
+    transition: .4s;
+}
+
+.tariffs-open.active svg{
+    transform: rotateX(180deg);
+}

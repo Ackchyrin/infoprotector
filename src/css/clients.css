@@ -1,0 +1,165 @@
+.clients{
+    margin: 80px auto 0 150px;
+    max-width: 1620px;
+    width: 100%;
+}
+
+.clients-title{
+    font-size: 64px;
+    font-weight: 500;
+    line-height: 75.84px;
+    letter-spacing: 0.01em;
+    color: white;
+}
+
+.clients-swiper__container{
+    position: relative;
+    margin-top: 60px;
+}
+
+.clients-swiper{
+    background-color: #28333A;
+    border-radius: 15px;
+}
+
+.clients-swiper__visible{
+    position: relative;
+    cursor: pointer;
+    display: flex;
+}
+
+.clients-swiper__visible span{
+    position: absolute;
+    font-size: 32px;
+    font-weight: 500;
+    line-height: 37.92px;
+    letter-spacing: 0.01em;
+    color: white;
+    bottom: 20px;
+    padding: 0 20px 0 20px;
+}
+
+.clients-swiper__hidden{
+    display: none;
+    height: 0;
+    transition: .4s;
+    flex-direction: column;
+}
+
+.clients-swiper__hidden-close{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+}
+
+.clients-swiper__hidden span{
+    max-height: 314px;
+    color: white;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 23.7px;
+    letter-spacing: 0.01em;
+    overflow-y: auto;
+    padding-bottom: 100px;
+    padding-right: 25px;
+    scrollbar-width: thin;
+    scrollbar-color: #808E9B #1E272E;
+    -ms-overflow-style: none;
+}
+
+.clients-swiper__hidden-button{
+    position: absolute;
+    bottom: 15px;
+    text-decoration: none;
+    background-color: #FEC400;
+    border-radius: 15px;
+    padding: 15px 45px;
+    text-align: center;
+    cursor: pointer;
+    transition: .4s;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 28.44px;
+    letter-spacing: 0.01em;
+    color: #1E272E;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    width: fit-content;
+    z-index: 2;
+}
+
+.clients-swiper__hidden-shadow{
+    background: linear-gradient(180deg, rgba(40, 51, 58, 0) 0%, #28333A 100%);
+    height: 94px;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    z-index: 1;
+    left: 0;
+    border-radius: 0 0 15px 15px;
+}
+
+.clients-swiper.active{
+    padding: 50px 5px 0 20px;
+    position: relative;
+    cursor: default;
+}
+
+.clients-swiper.active .clients-swiper__visible{
+    display: none;
+}
+
+.clients-swiper.active .clients-swiper__hidden{
+    display: flex;
+    height: 100%;
+}
+
+.clients-swiper__hidden span::-webkit-scrollbar {
+    width: 5px;
+    max-height: 50%; height: 50%;
+}
+
+.clients-swiper__hidden span::-webkit-scrollbar-thumb {
+    -webkit-box-shadow: inset 0 0 5px #808E9B; 
+    border-radius: 14px;
+}
+
+.clients-swiper__hidden span::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 5px #1E272E;
+    max-height: 50%; height: 50%;
+}
+
+.clients-swiper__hidden span::-ms-scrollbar {
+    width: 5px;
+}
+
+.clients-swiper__hidden span::-ms-scrollbar-thumb {
+    -webkit-box-shadow: inset 0 0 5px #808E9B; 
+    border-radius: 14px;
+}
+
+.clients-swiper__hidden span::-ms-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 5px #1E272E; 
+}
+
+.clients-swiper__hidden span::-webkit-scrollbar-button{
+    display: none;
+}
+
+.clients-swiper__container .swiper-button-prev,
+.clients-swiper__container .swiper-button-next{
+    width: 54px;
+    height: 54px;
+    transition: .4s;
+}
+
+.clients-swiper__container .swiper-button-prev{
+    left: -75px;
+}
+
+.clients-swiper__container .swiper-button-next{
+    right: -75px;
+}

@@ -1,0 +1,90 @@
+.headlines{
+    display: flex;
+    gap: 20px;
+    width: 100%;
+}
+
+.headlines-info{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-left: 150px;
+}
+
+.headlines-info__logo{
+    margin-top: 174px;
+    max-width: 360px;
+}
+
+.headlines-info__title{
+    margin-top: 20px;
+    font-size: 64px;
+    font-weight: 500;
+    line-height: 75.84px;
+    letter-spacing: 0.01em;
+    text-align: left;
+    color: white;
+}
+
+.headlines-info__title span{
+    font-size: 64px;
+    font-weight: 500;
+    line-height: 75.84px;
+    letter-spacing: 0.01em;
+    text-align: left;
+    color:#FEC400;
+}
+
+.headlines-info__guarantees{
+    margin-top: 40px;
+    display: flex;
+    gap: 20px;
+}
+
+.headlines-info__guarantees-item{
+    background-color: #28333A;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 20px 0 30px;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.headlines-info__guarantees-item span{
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 23.7px;
+    letter-spacing: 0.01em;
+    text-align: center;
+    color: white;
+}
+
+.headlines-info__link{
+    margin-top: 70px;
+    display: flex;
+    gap: 20px;
+}
+
+.headlines-info__link-button{
+    text-decoration: none;
+    background-color: #FEC400;
+    border-radius: 15px;
+    padding: 15px 45px;
+    text-align: center;
+    cursor: pointer;
+    transition: .4s;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 28.44px;
+    letter-spacing: 0.01em;
+    color: #1E272E;
+}
+
+.headlines-iframe{
+    max-width: 950px;
+    width: 100%;
+    display: flex;
+}

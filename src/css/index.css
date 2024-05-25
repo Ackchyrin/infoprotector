@@ -1,0 +1,9 @@
+html{
+    background-color: #1E272E;
+}
+
+body{
+    max-width: 1920px;
+    margin: 0 auto;
+    position: relative;
+}

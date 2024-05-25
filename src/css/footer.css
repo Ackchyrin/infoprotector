@@ -1,0 +1,124 @@
+.footer{
+    margin: 80px auto 0 150px;
+    max-width: 1620px;
+    width: 100%;
+    display: flex;
+    gap: 20px;
+    padding-bottom: 36px;
+}
+
+.footer-contacts{
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-contacts__title{
+    font-size: 64px;
+    font-weight: 500;
+    line-height: 75.84px;
+    letter-spacing: 0.01em;
+    color: white;
+}
+
+.footer-contacts__logo{
+    max-width: 360px;
+    margin-top: 40px;
+}
+
+.footer-contacts__social{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.footer-contacts__social-phone,
+.footer-contacts__social-email{
+    background-color: #FEC400;
+    padding: 15px 25px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 28.44px;
+    letter-spacing: 0.01em;
+    color:#1E272E;
+    text-decoration: none;
+    transition: .4s;
+    border-radius: 15px;
+}
+
+.footer-contacts__social-telegramm{
+    background-color: #2F89CE;
+    padding: 15px 25px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 28.44px;
+    letter-spacing: 0.01em;
+    color: white;
+    text-decoration: none;
+    transition: .4s;
+    border-radius: 15px;
+}
+
+.footer-contacts__social-vk{
+    background-color: #0076FD;
+    padding: 15px 25px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 28.44px;
+    letter-spacing: 0.01em;
+    color: white;
+    text-decoration: none;
+    transition: .4s;
+    border-radius: 15px;
+}
+
+.footer-contacts__place{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin-top: 20px;
+}
+
+.footer-contacts__place span{
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 28.44px;
+    letter-spacing: 0.01em;
+    color: white;
+}
+
+.footer-contacts__company{
+    font-family: Rubik;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 23.7px;
+    letter-spacing: 0.01em;
+    color: #808E9B;
+    margin-top: 55px;
+}
+
+.footer-contacts__politics{
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 23.7px;
+    letter-spacing: 0.01em;
+    transition: .4s;  
+    color: #808E9B; 
+    margin-top: 40px;
+}
+
+
+.footer-map{
+    max-width: 800px;
+    width: 200%;
+    border-radius: 15px;
+}
