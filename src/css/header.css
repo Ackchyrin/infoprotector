@@ -9,7 +9,6 @@
 }
 
 .header-conainer{
-    max-width: 1920px;
     width: 100%;
     transition: .4s;
     background-color: #28333A;
@@ -18,10 +17,12 @@
     justify-content: space-between;
     padding: 20px 22px;
     border-radius: 0 0 15px 15px;
+    max-width: 1620px;
 }
 
 .header-logo{
     max-width: 330px;
+    display: none;
 }
 
 .header-menu{
@@ -81,10 +82,10 @@
 }
 
 .header.active .header-conainer{
-    max-width: 1620px;
     padding: 20px 0;
+    max-width: 1920px;
 }
 
 .header.active .header-logo{
-    display: none;
+    display: block;
 }
