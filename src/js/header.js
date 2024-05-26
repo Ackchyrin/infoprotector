@@ -10,7 +10,6 @@ document.addEventListener("DOMContentLoaded", function() {
     const sections = document.querySelectorAll(".menuScroll");
     const menuItems = document.querySelectorAll(".header-menu__item-scroll");
 
-    // Функция, которая определяет, находится ли элемент в видимой области окна
     function isInViewport(element) {
         const rect = element.getBoundingClientRect();
         return (
@@ -21,11 +20,9 @@ document.addEventListener("DOMContentLoaded", function() {
         );
     }
 
-    // Функция для обновления активного пункта меню на основе текущего положения скролла
     function updateMenu() {
-        let activeMenuItem = null; // Переменная для хранения активного пункта меню
+        let activeMenuItem = null;
 
-        // Находим активный пункт меню
         sections.forEach(section => {
             const sectionId = section.getAttribute("id");
             const menuItem = document.querySelector(`.header-menu__item-scroll[data-section="${sectionId}"]`);
@@ -34,22 +31,18 @@ document.addEventListener("DOMContentLoaded", function() {
             }
         });
 
-        // Удаляем класс "active" у всех пунктов меню
         menuItems.forEach(item => {
             item.classList.remove("active");
         });
 
-        // Если есть активный пункт, добавляем ему класс "active"
         if (activeMenuItem) {
             activeMenuItem.classList.add("active");
         }
     }
 
-    // Обновляем активный пункт меню при загрузке страницы и при скролле
     window.addEventListener("load", updateMenu);
     window.addEventListener("scroll", updateMenu);
 
-    // Плавный скролл к разделу при клике на пункт меню
     menuItems.forEach(item => {
         item.addEventListener("click", function() {
             const targetSectionId = this.getAttribute("data-section");

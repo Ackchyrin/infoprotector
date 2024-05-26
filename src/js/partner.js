@@ -2,7 +2,6 @@ document.addEventListener('DOMContentLoaded', function() {
     const track = document.querySelector('.partner-functional__range-track');
     const thumb = document.querySelector('.partner-functional__track-thumb');
     const fill = document.querySelector('.partner-functional__track-fill');
-    const display = document.querySelector('.value-display');
     const trackWidth = track.offsetWidth;
 
     const min = 5000;
@@ -26,7 +25,6 @@ document.addEventListener('DOMContentLoaded', function() {
         const event = e.touches ? e.touches[0] : e;
         let newLeft = event.clientX - track.getBoundingClientRect().left - thumb.offsetWidth / 2;
 
-        // Ensure thumb stays within track bounds
         if (newLeft < 0) {
             newLeft = 0;
         } else if (newLeft > trackWidth - thumb.offsetWidth) {
@@ -60,7 +58,6 @@ document.addEventListener('DOMContentLoaded', function() {
         updatePosition(percent);
     }
 
-    // Initialize thumb position and fill
     const initialPercent = (min - min) / (max - min);
     updatePosition(initialPercent);
 });
