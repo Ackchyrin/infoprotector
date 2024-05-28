@@ -9,3 +9,9 @@ function closeModal(){
     document.querySelector('.modal-background').classList.remove('active')
     document.querySelector('.modal').classList.remove('active')
 }
+
+document.addEventListener('keydown', function(event){
+    if(event.key === 'Escape' || event.key === 'Esc'){
+        closeModal()
+    }
+})
