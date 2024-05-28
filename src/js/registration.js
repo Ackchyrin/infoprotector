@@ -1,0 +1,1 @@
+document.querySelector('.registration-form__checkbox').addEventListener("click",()=>{document.querySelector('.registration-form__checkbox').classList.toggle('active')})

@@ -106,7 +106,32 @@
     width: 35px;
     height: 35px;
     border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
+
+.registration-form__checkbox .registration-form__checkbox-check svg{
+    opacity: 0;
+}
+
+.registration-form__checkbox:hover .registration-form__checkbox-check svg{
+    opacity: 1;
+}
+
+.registration-form__checkbox.active .registration-form__checkbox-check svg{
+    opacity: 1;
+}
+
+.registration-form__checkbox.active .registration-form__checkbox-check svg path{
+    stroke: #05C46B;
+    opacity: 1;
+}
+
+.registration-form__checkbox.active:hover .registration-form__checkbox-check svg path{
+    stroke: white;
+}
+
 
 .registration-form__button{
     text-decoration: none;
@@ -124,6 +149,10 @@
     margin-top: 10px;
 }
 
+.registration-form__button:hover{
+    background-color: #FFA801;
+}
+
 .registration-form__info{
     font-size: 20px;
     font-weight: 400;
@@ -135,4 +164,9 @@
 
 .registration-form__info a{
     color: white;
+    transition: .4s;
+}
+
+.registration-form__info a:hover{
+    color: #FEC400;
 }

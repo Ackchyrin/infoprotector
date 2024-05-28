@@ -47,8 +47,9 @@ document.addEventListener("DOMContentLoaded", function() {
         item.addEventListener("click", function() {
             const targetSectionId = this.getAttribute("data-section");
             const targetSection = document.getElementById(targetSectionId);
+            heightTop = targetSection.offsetTop - 100
             window.scrollTo({
-                top: targetSection.offsetTop,
+                top: heightTop,
                 behavior: "smooth"
             });
         });

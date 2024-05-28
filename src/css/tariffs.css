@@ -159,6 +159,10 @@
     gap: 10px;
 }
 
+.tariffs-open:hover{
+    background-color: #FFA801;
+}
+
 .tariffs-open svg{
     transition: .4s;
 }

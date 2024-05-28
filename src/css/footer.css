@@ -1,10 +1,12 @@
 .footer{
     margin: 80px auto 0 150px;
     max-width: 1620px;
+}
+
+.footer-container{
     width: 100%;
     display: flex;
     gap: 20px;
-    padding-bottom: 36px;
 }
 
 .footer-contacts{
@@ -49,6 +51,11 @@
     border-radius: 15px;
 }
 
+.footer-contacts__social-phone:hover,
+.footer-contacts__social-email:hover{
+    background-color: #FFA801;
+}
+
 .footer-contacts__social-telegramm{
     background-color: #2F89CE;
     padding: 15px 25px;
@@ -81,6 +88,14 @@
     border-radius: 15px;
 }
 
+.footer-contacts__social-telegramm:hover{
+    background-color:#82B8E2;
+}
+
+.footer-contacts__social-vk:hover{
+    background-color:#66ADFE;
+}
+
 .footer-contacts__place{
     display: flex;
     align-items: center;
@@ -106,6 +121,13 @@
     margin-top: 55px;
 }
 
+.footer-map{
+    max-width: 800px;
+    width: 200%;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
 .footer-contacts__politics{
     font-size: 20px;
     font-weight: 400;
@@ -114,11 +136,10 @@
     transition: .4s;  
     color: #808E9B; 
     margin-top: 40px;
+    padding-bottom: 36px;
+    display: flex;
 }
 
-
-.footer-map{
-    max-width: 800px;
-    width: 200%;
-    border-radius: 15px;
+.footer-contacts__politics:hover{
+    color: #FEC400;
 }

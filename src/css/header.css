@@ -39,6 +39,7 @@
     padding: 10px 15px 12px;
     transition: .4s;
     border-radius: 15px;
+    text-decoration: none;
 }
 
 .header-menu__item.active{
@@ -62,6 +63,13 @@
     transition: .4s;
 }
 
+.header-link__social.telegramm:hover svg rect:nth-child(1){
+    fill: #82B8E2;
+}
+.header-link__social.vk:hover svg rect:nth-child(1){
+    fill: #66ADFE;
+}
+
 .header-link__login{
     margin-left: 5px;
     display: flex;
@@ -78,6 +86,10 @@
     line-height: 23.7px;
     letter-spacing: 0.01em;
     color:#1E272E;
+}
+
+.header-link__login:hover{
+    background-color: #FFA801;
 }
 
 .header.active .header-conainer{

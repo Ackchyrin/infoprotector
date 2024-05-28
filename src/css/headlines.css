@@ -83,6 +83,10 @@
     color: #1E272E;
 }
 
+.headlines-info__link-button:hover{
+    background-color: #FFA801;
+}
+
 .headlines-iframe{
     max-width: 950px;
     width: 100%;

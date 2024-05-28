@@ -37,6 +37,11 @@
     color: white;
     bottom: 20px;
     padding: 0 20px 0 20px;
+    transition: .4s;
+}
+
+.clients-swiper__visible:hover span{
+    color: #FEC400;
 }
 
 .clients-swiper__hidden{

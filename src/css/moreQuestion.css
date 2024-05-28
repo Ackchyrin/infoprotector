@@ -20,6 +20,17 @@
 }
 
 .moreQuestion-questions__quest{
+    background-color:#28333A;
+    border-radius: 15px;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+}
+
+.moreQuestion-questions__quest-title{
+    gap: 15px;
+    transition: .4s;
+    padding: 0 0 0 15px;
     color: white;
     font-size: 24px;
     font-weight: 500;
@@ -27,16 +38,46 @@
     letter-spacing: 0.01em;
     display: flex;
     justify-content: space-between;
-    padding: 0 0 0 15px;
     align-items: center;
-    background-color: #28333A;
-    border-radius: 15px;
-    cursor: pointer;
-    gap: 15px;
 }
 
-.moreQuestion-questions__quest svg {
+.moreQuestion-questions__quest-title svg{
     transition: .4s;
+}
+
+.moreQuestion-questions__quest-title svg path{
+    transition: .4s;
+}
+
+.moreQuestion-questions__quest:hover .moreQuestion-questions__quest-title{
+    color:#FEC400;
+}
+
+.moreQuestion-questions__quest:hover .moreQuestion-questions__quest-title svg path{
+    stroke: #FEC400;
+}
+
+.moreQuestion-questions__quest-description{
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 23.7px;
+    letter-spacing: 0.01em;
+    color: white;
+    height: 0;
+    overflow: hidden;
+    transition: height .4s ease-out;
+}
+
+.moreQuestion-questions__quest.active .moreQuestion-questions__quest-description{
+    padding: 0 15px 15px 15px;
+}
+
+.moreQuestion-questions__quest.active:hover .moreQuestion-questions__quest-title{
+    color: white;
+}
+
+.moreQuestion-questions__quest.active .moreQuestion-questions__quest-title svg{
+    transform: rotateX(180deg);
 }
 
 .moreQuestion-button{
@@ -57,4 +98,8 @@
     display: flex;
     align-items: center;
     gap: 10px;
+}
+
+.moreQuestion-button:hover{
+    background-color: #FFA801;
 }

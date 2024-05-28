@@ -1,0 +1,108 @@
+.modal-background{
+    display: none;
+    background-color: rgba(0, 0, 0, .5);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 10000;
+}
+
+.modal-background.active{
+    display: block;
+}
+
+.modal{
+    position: fixed;
+    z-index: 10001;
+    background-color:#28333A;
+    border-radius: 15px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+    flex-direction: column;
+    padding: 30px 30px 40px;
+    max-width: 745px;
+}
+
+.modal.active{
+    display: flex;
+}
+
+.modal-close{
+    cursor: pointer;
+    transition: .4s;
+    position: absolute;
+    top: 30px;
+    right: 30px;
+}
+
+.modal-title{
+    font-size: 32px;
+    font-weight: 500;
+    line-height: 37.92px;
+    letter-spacing: 0.01em;
+    color: white;
+}
+
+.modal-container{
+    display: flex;
+    flex-direction: column;
+    margin-top: 40px;
+    gap: 10px;
+}
+
+.modal-container input{
+    background-color: #1E272E;
+    padding: 21px 25px;
+    border-radius: 15px;
+    outline: none;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 28.44px;
+    letter-spacing: 0.01em;
+    color: white;
+    border: none;
+    max-width: 685px;
+}
+
+.modal-button{
+    text-decoration: none;
+    background-color: #FEC400;
+    border-radius: 15px;
+    padding: 15px 45px;
+    text-align: center;
+    cursor: pointer;
+    transition: .4s;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 28.44px;
+    letter-spacing: 0.01em;
+    color: #1E272E;
+    margin-top: 30px;
+}
+
+.modal-button:hover{
+    background-color: #FFA801;
+}
+
+.modal-descfription{
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 23.7px;
+    letter-spacing: 0.01em;
+    color: white;
+    margin-top: 15px;
+}
+
+.modal-descfription a{
+    color: white;
+    transition: .4s;
+    
+}
+
+.modal-descfription a:hover{
+    color: #FEC400;
+}

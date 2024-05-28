@@ -54,6 +54,12 @@
     width: 100%;
 }
 
+
+.partner-functional__button div:hover,
+.partner-functional__button a:hover{
+    background-color: #FFA801;
+}
+
 .partner-functional__range{
     width: 100%;
     margin-top: 30px;
@@ -141,4 +147,9 @@
 
 .partner-info__postscript a{
     color: #808E9B;
+    transition: .4s;
+}
+
+.partner-info__postscript a:hover{
+    color: #FEC400;
 }

@@ -61,6 +61,12 @@
     position: absolute;
     top: -20px;
     right: -10px;
+    transition: .4s;
+}
+
+.price-list__item:hover .price-list__top-arrow{
+    top: -30px;
+    right: -20px;
 }
 
 .price-list__item-bottom{
@@ -103,6 +109,17 @@
 }
 
 .price-question__quest{
+    background-color:#28333A;
+    border-radius: 15px;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+}
+
+.price-question__quest-title{
+    gap: 15px;
+    transition: .4s;
+    padding: 0 0 0 15px;
     color: white;
     font-size: 24px;
     font-weight: 500;
@@ -110,16 +127,46 @@
     letter-spacing: 0.01em;
     display: flex;
     justify-content: space-between;
-    padding: 0 0 0 15px;
     align-items: center;
-    background-color:#28333A;
-    border-radius: 15px;
-    cursor: pointer;
-    gap: 15px;
 }
 
-.price-question__quest svg{
+.price-question__quest-title svg{
     transition: .4s;
+}
+
+.price-question__quest-title svg path{
+    transition: .4s;
+}
+
+.price-question__quest:hover .price-question__quest-title{
+    color:#FEC400;
+}
+
+.price-question__quest:hover .price-question__quest-title svg path{
+    stroke: #FEC400;
+}
+
+.price-question__quest-description{
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 23.7px;
+    letter-spacing: 0.01em;
+    color: white;
+    height: 0;
+    overflow: hidden;
+    transition:height .4s ease-out;
+}
+
+.price-question__quest.active .price-question__quest-description{
+    padding: 0 15px 15px 15px;
+}
+
+.price-question__quest.active:hover .price-question__quest-title{
+    color: white;
+}
+
+.price-question__quest.active .price-question__quest-title svg{
+    transform: rotateX(180deg);
 }
 
 .price-button{
@@ -138,3 +185,8 @@
     width: fit-content;
     margin: 20px auto 0;
 }
+
+.price-button:hover{
+    background-color: #FFA801;
+}
+

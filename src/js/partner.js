@@ -45,7 +45,7 @@ document.addEventListener('DOMContentLoaded', function() {
     function updatePosition(percent) {
         const newLeft = percent * (trackWidth - thumb.offsetWidth);
         thumb.style.left = newLeft + 'px';
-        fill.style.width = (percent * 100) + '%';
+        fill.style.width = (newLeft + 15) + 'px';
 
         const value = Math.round((percent * (max - min) + min) / step) * step;
         document.querySelector('.partner-functional__wastes span').innerHTML = value.toLocaleString('de-DE') + " ₽"
