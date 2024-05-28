@@ -153,3 +153,105 @@
 .partner-info__postscript a:hover{
     color: #FEC400;
 }
+
+@media screen and (max-width:1620px){
+
+    .partner{
+        margin: 50px auto 0 auto;
+        max-width: 99vw;
+        width: 100%;
+    }
+
+}
+
+@media screen and (max-width:1200px){
+
+    .partner{
+        margin: 116px 0 0;
+        max-width: 100%;
+        padding: 0 8px 0 8px;
+        flex-direction: column-reverse;
+    }
+
+    .partner-info__title{
+        font-size: 42px;
+        line-height: 49.77px;
+    }
+
+    .partner-info__desctiption{
+        font-size: 18px;
+        line-height: 21.33px;
+        margin-top: 16px;
+    }
+
+    .partner-info__cell{
+        margin-top: 28px;
+        gap: 16px;
+    }
+
+    .partner-info__cell-item{
+        padding: 12px 0 18px 0;
+        gap: 0;
+        max-width: 180px;
+    }
+
+    .partner-info__cell-item span{
+        font-size: 14px;
+        line-height: 16.59px;
+    }
+
+    .partner-info__postscript{
+        margin-top: 16px;
+        font-size: 14px;
+        line-height: 16.59px;
+    }
+
+    .partner-functional{
+        padding: 18px;
+    }
+
+    .partner-functional__wastes{
+        font-size: 18px;
+        line-height: 21.33px;
+    }
+
+    .partner-functional__range{
+        margin-top: 28px;
+    }
+
+    .partner-functional__range-track{
+        height: 8px;
+    }
+
+    .partner-functional__track-thumb{
+        top: -12px;
+    }
+
+    .partner-functional__track-thumb svg{
+        width: 32px;
+        height: 32px;
+    }
+
+    .partner-functional__receiving{
+        font-size: 18px;
+        line-height: 21.33px;
+        margin-top: 28px;
+    }
+
+    .partner-functional__button{
+        margin-top: 32px;
+    }
+    
+    .partner-functional__button{
+        flex-direction: column;
+    }
+
+    .partner-functional__button div,
+    .partner-functional__button a{
+        padding: 10px 0 12px;
+        text-align: center;
+        font-size: 16px;
+        line-height: 18.96px;
+    }
+
+}

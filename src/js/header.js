@@ -21,23 +21,22 @@ document.addEventListener("DOMContentLoaded", function() {
     }
 
     function updateMenu() {
-        let activeMenuItem = null;
+        let activeSectionId = null;
 
         sections.forEach(section => {
-            const sectionId = section.getAttribute("id");
-            const menuItem = document.querySelector(`.header-menu__item-scroll[data-section="${sectionId}"]`);
             if (isInViewport(section)) {
-                activeMenuItem = menuItem;
+                activeSectionId = section.getAttribute("id");
             }
         });
 
         menuItems.forEach(item => {
-            item.classList.remove("active");
+            const itemSectionId = item.getAttribute("data-section");
+            if (itemSectionId === activeSectionId) {
+                item.classList.add("active");
+            } else {
+                item.classList.remove("active");
+            }
         });
-
-        if (activeMenuItem) {
-            activeMenuItem.classList.add("active");
-        }
     }
 
     window.addEventListener("load", updateMenu);
@@ -47,11 +46,28 @@ document.addEventListener("DOMContentLoaded", function() {
         item.addEventListener("click", function() {
             const targetSectionId = this.getAttribute("data-section");
             const targetSection = document.getElementById(targetSectionId);
-            heightTop = targetSection.offsetTop - 100
+            const heightTop = targetSection.offsetTop - 100;
             window.scrollTo({
                 top: heightTop,
                 behavior: "smooth"
             });
         });
     });
-}); 
+});
+
+document.querySelector('.mobile-menu').innerHTML = document.querySelector('.mobile-menu').innerHTML + document.querySelector('.header-menu').innerHTML
+
+document.querySelectorAll('.mobile-menu .header-menu__item').forEach(el=>{
+    el.addEventListener('click',closeMenuMobile)
+})
+
+function openMenuMobile(){
+    document.querySelector('html').style.overflow = 'hidden'
+    document.querySelector('.mobile-menu').classList.add('active')
+}
+
+function closeMenuMobile(){
+    document.querySelector('html').style.overflow = 'initial'
+    document.querySelector('.mobile-menu').classList.remove('active')
+}
+

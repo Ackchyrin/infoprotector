@@ -170,3 +170,96 @@
 .registration-form__info a:hover{
     color: #FEC400;
 }
+
+.registration-mobile__alert{
+    display: none;
+}
+
+@media screen and (max-width:1620px){
+
+    .registration{
+        margin: 50px auto 0 auto;
+        max-width: 99vw;
+        width: 100%;
+    }
+
+}
+
+@media screen and (max-width:1200px){
+
+    .registration-info__attemption{
+        display: none;
+    }
+
+    .registration{
+        margin: 60px 0 0;
+        max-width: 100%;
+        padding: 30px 8px;
+        flex-direction: column;
+        gap: 16px;
+    }
+
+    .registration-info__title{
+        gap: 16px;
+    }
+
+    .registration-info__title-header{
+        font-size: 42px;
+        line-height: 49.77px;
+    }
+
+    .registration-info__title-description{
+        font-size: 18px;
+        line-height: 21.33px;
+    }
+
+    .registration-form{
+        gap: 8px;
+        max-width: 100%;
+    }
+
+    .registration-form input{
+        padding: 20px 12px;
+        font-size: 16px;
+        line-height: 18.96px;
+    }
+
+    .registration-form input:nth-child(4){
+        margin-top: 8px;
+    }
+
+    .registration-form__checkbox{
+        margin-top: 8px;
+        font-size: 14px;
+        line-height: 16.59px;
+    }
+
+    .registration-form__button{
+        margin-top: 16px;
+        padding: 12.5px 0 14.5px 0;
+        font-size: 16px;
+        line-height: 18.96px;
+    }
+
+    .registration-form__info{
+        font-size: 14px;
+        line-height: 16.59px;
+    }
+    
+    .registration-mobile__alert{
+        display: flex;
+        flex-direction: column;
+        margin-top: 16px;
+    }
+
+    .registration-info__attemption-title{
+        font-size: 18px;
+        line-height: 21.33px;
+    }
+
+    .registration-info__attemption-description{
+        font-size: 18px;
+        line-height: 21.33px;
+    }
+
+}

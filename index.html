@@ -67,6 +67,11 @@
                     личный кабинет
                 </a>
             </div>
+            <div class="header-menu__burger" onclick="openMenuMobile()">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M4 12H20M4 6H20M4 18H20" stroke="#1E272E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            </div>
         </div>
     </header>
     <main class="main">
@@ -74,7 +79,9 @@
             <div class="headlines-info">
                 <img class="headlines-info__logo" src="./src/image/LogoHeadlines.png" alt="Логотип инфопротектор в информация">
                 <div class="headlines-info__title">
-                    Ваши <span>данные</span> <br>
+                    Ваши <span>данные</span>
+                </div>
+                <div class="headlines-info__title">
                     под надежной защитой
                 </div>
                 <div class="headlines-info__guarantees">
@@ -86,8 +93,8 @@
                             <path d="M24 39V33C24 31.4087 23.3679 29.8826 22.2426 28.7574C21.1174 27.6321 19.5913 27 18 27C16.4087 27 14.8826 27.6321 13.7574 28.7574C12.6321 29.8826 12 31.4087 12 33V39" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
                         </svg>
                         <span>
-                            Контроль над<br>
-                            распространением<br>
+                            Контроль над
+                            распространением
                             копий ваших файлов
                         </span>
                     </div>
@@ -96,8 +103,8 @@
                             <path d="M31.98 18H42C43.5913 18 45.1174 18.6321 46.2426 19.7574C47.3679 20.8826 48 22.4087 48 24V31.5L63.744 22.314C63.972 22.181 64.231 22.1105 64.4949 22.1096C64.7588 22.1087 65.0183 22.1774 65.2472 22.3089C65.476 22.4404 65.6662 22.6299 65.7983 22.8583C65.9305 23.0868 66.0001 23.3461 66 23.61V48.198M48 48C48 49.5913 47.3679 51.1174 46.2426 52.2426C45.1174 53.3679 43.5913 54 42 54H12C10.4087 54 8.88258 53.3679 7.75736 52.2426C6.63214 51.1174 6 49.5913 6 48V24C6 22.4087 6.63214 20.8826 7.75736 19.7574C8.88258 18.6321 10.4087 18 12 18H18M6 6L66 66" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
                         </svg>
                         <span>
-                            Многоуровневая<br>
-                            блокировка записи<br>
+                            Многоуровневая
+                            блокировка записи
                             экрана
                         </span>
                     </div>
@@ -107,8 +114,8 @@
                             <path d="M42 6V18C42 19.5913 42.6321 21.1174 43.7574 22.2426C44.8826 23.3679 46.4087 24 48 24H60M15 36L6 45L15 54M27 54L36 45L27 36" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
                         </svg>
                         <span>
-                            Более 10 лет на рынке<br>
-                            защиты<br>
+                            Более 10 лет на рынке
+                            защиты
                             инфо продуктов
                         </span> 
                     </div>
@@ -124,6 +131,14 @@
             </div>
             <div class="headlines-iframe">
                 <img src="./src/image/FrameHeadlines.png" alt="Инфопротектор презентация">
+                <div class="headlines-mobile">
+                    <div class="headlines-info__link-button">
+                        Зарегистрироваться
+                    </div>
+                    <a class="headlines-info__link-button" href="https://api.infoprotector.com/user/">
+                        Войти в кабинет
+                    </a>
+                </div>
             </div>
         </div>
         <div class="services menuScroll" id="services">
@@ -343,6 +358,12 @@
                         <div class="services-list__hidden-shadow"></div>
                     </div>
                 </div>
+            </div>
+            <div class="services-mobile__open">
+                Раскрыть полностью
+                <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M6.5 9L12.5 15L18.5 9" stroke="#1E272E" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
             </div>
         </div>
         <div class="tariffs menuScroll" id="tariffs">
@@ -773,6 +794,53 @@
                     <path d="M6.5 9L12.5 15L18.5 9" stroke="#1E272E" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
                 </svg>
             </div>
+            <div class="tariffs-mobile">
+                <div class="tariffs-mobile__item">
+                    <div class="tariffs-mobile__item-title pink">
+                        Базовый <span>0₽/мес</span>
+                    </div>
+                    <div class="tariffs-mobile__item-list">
+                        <span>Отключение возможности видеозахвата</span>
+                        <span>Защита от запуска программ видеозахвата при воспроизведении контента</span>
+                        <span>Автоматическая проверка покупателей по черному списку</span>
+                        <span>Автоматическая проверка отпечатков компьютеров по черному списку</span>
+                        <span>И другие возможности</span>
+                    </div>
+                    <div class="tariffs-mobile__item-button">
+                        Подробнее
+                    </div>
+                </div>
+                <div class="tariffs-mobile__item">
+                    <div class="tariffs-mobile__item-title blue">
+                        Базовый <span>0₽/мес</span>
+                    </div>
+                    <div class="tariffs-mobile__item-list">
+                        <span>Отключение возможности видеозахвата</span>
+                        <span>Защита от запуска программ видеозахвата при воспроизведении контента</span>
+                        <span>Автоматическая проверка покупателей по черному списку</span>
+                        <span>Автоматическая проверка отпечатков компьютеров по черному списку</span>
+                        <span>И другие возможности</span>
+                    </div>
+                    <div class="tariffs-mobile__item-button">
+                        Подробнее
+                    </div>
+                </div>
+                <div class="tariffs-mobile__item">
+                    <div class="tariffs-mobile__item-title green">
+                        Базовый <span>0₽/мес</span>
+                    </div>
+                    <div class="tariffs-mobile__item-list">
+                        <span>Отключение возможности видеозахвата</span>
+                        <span>Защита от запуска программ видеозахвата при воспроизведении контента</span>
+                        <span>Автоматическая проверка покупателей по черному списку</span>
+                        <span>Автоматическая проверка отпечатков компьютеров по черному списку</span>
+                        <span>И другие возможности</span>
+                    </div>
+                    <div class="tariffs-mobile__item-button">
+                        Подробнее
+                    </div>
+                </div>
+            </div>
         </div>
         <div class="price">
             <div class="price-title">
@@ -869,8 +937,11 @@
                 <div class="price-question__quest">
                     <div class="price-question__quest-title">
                         Есть ли скидки ?
-                        <svg width="117" height="60" viewBox="0 0 117 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <svg class="arrowDesktop" width="117" height="60" viewBox="0 0 117 60" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M51 26.25L58.5 33.75L66 26.25" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>                
+                        <svg class="arrowMobile" width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M4.5 6.75L9 11.25L13.5 6.75" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                         </svg>
                     </div>
                     <div class="price-question__quest-description">
@@ -880,8 +951,11 @@
                 <div class="price-question__quest">
                     <div class="price-question__quest-title">
                         Есть ли скидки ?
-                        <svg width="117" height="60" viewBox="0 0 117 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <svg class="arrowDesktop" width="117" height="60" viewBox="0 0 117 60" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M51 26.25L58.5 33.75L66 26.25" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>                
+                        <svg class="arrowMobile" width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M4.5 6.75L9 11.25L13.5 6.75" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                         </svg>
                     </div>
                     <div class="price-question__quest-description">
@@ -891,8 +965,11 @@
                 <div class="price-question__quest">
                     <div class="price-question__quest-title">
                         Есть ли скидки ?
-                        <svg width="117" height="60" viewBox="0 0 117 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <svg class="arrowDesktop" width="117" height="60" viewBox="0 0 117 60" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M51 26.25L58.5 33.75L66 26.25" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>                
+                        <svg class="arrowMobile" width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M4.5 6.75L9 11.25L13.5 6.75" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                         </svg>
                     </div>
                     <div class="price-question__quest-description">
@@ -902,8 +979,11 @@
                 <div class="price-question__quest">
                     <div class="price-question__quest-title">
                         Есть ли скидки ?
-                        <svg width="117" height="60" viewBox="0 0 117 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <svg class="arrowDesktop" width="117" height="60" viewBox="0 0 117 60" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M51 26.25L58.5 33.75L66 26.25" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>                
+                        <svg class="arrowMobile" width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M4.5 6.75L9 11.25L13.5 6.75" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                         </svg>
                     </div>
                     <div class="price-question__quest-description">
@@ -913,8 +993,11 @@
                 <div class="price-question__quest">
                     <div class="price-question__quest-title">
                         Есть ли скидки ?
-                        <svg width="117" height="60" viewBox="0 0 117 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <svg class="arrowDesktop" width="117" height="60" viewBox="0 0 117 60" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M51 26.25L58.5 33.75L66 26.25" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>                
+                        <svg class="arrowMobile" width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M4.5 6.75L9 11.25L13.5 6.75" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                         </svg>
                     </div>
                     <div class="price-question__quest-description">
@@ -924,8 +1007,11 @@
                 <div class="price-question__quest">
                     <div class="price-question__quest-title">
                         Есть ли скидки ?
-                        <svg width="117" height="60" viewBox="0 0 117 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <svg class="arrowDesktop" width="117" height="60" viewBox="0 0 117 60" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M51 26.25L58.5 33.75L66 26.25" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>                
+                        <svg class="arrowMobile" width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M4.5 6.75L9 11.25L13.5 6.75" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                         </svg>
                     </div>
                     <div class="price-question__quest-description">
@@ -935,8 +1021,11 @@
                 <div class="price-question__quest">
                     <div class="price-question__quest-title">
                         Есть ли скидки ?
-                        <svg width="117" height="60" viewBox="0 0 117 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <svg class="arrowDesktop" width="117" height="60" viewBox="0 0 117 60" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M51 26.25L58.5 33.75L66 26.25" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>                
+                        <svg class="arrowMobile" width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M4.5 6.75L9 11.25L13.5 6.75" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                         </svg>
                     </div>
                     <div class="price-question__quest-description">
@@ -946,8 +1035,11 @@
                 <div class="price-question__quest">
                     <div class="price-question__quest-title">
                         Есть ли скидки ?
-                        <svg width="117" height="60" viewBox="0 0 117 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <svg class="arrowDesktop" width="117" height="60" viewBox="0 0 117 60" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M51 26.25L58.5 33.75L66 26.25" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>                
+                        <svg class="arrowMobile" width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M4.5 6.75L9 11.25L13.5 6.75" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                         </svg>
                     </div>
                     <div class="price-question__quest-description">
@@ -1021,6 +1113,14 @@
                 </div>
                 <div class="registration-form__info">
                     При подключении вы соглашаетесь с условиями нашего <a href="/">клиентского соглашения</a>
+                </div>
+            </div>
+            <div class="registration-mobile__alert">
+                <div class="registration-info__attemption-title">
+                    Внимание
+                </div>
+                <div class="registration-info__attemption-description">
+                    Данная форма создана для авторов. Если Вы приобрели тариф и испытываете трудности нажмите <a href="/">сюда</a>
                 </div>
             </div>
         </div>
@@ -1178,7 +1278,7 @@
                 </div>
                 <div class="partner-functional__button">
                     <div>
-                        Зарегистрироваться <br>в программе
+                        Зарегистрироваться в программе
                     </div>
                     <a href="https://api.infoprotector.com/user/">
                         Войти в аккаунт партнера
@@ -1222,9 +1322,12 @@
                 <div class="moreQuestion-questions__quest">
                     <div class="moreQuestion-questions__quest-title">
                         Могу ли я самостоятельно защищать файлы?
-                        <svg width="117" height="60" viewBox="0 0 117 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <svg class="arrowDesktop" width="117" height="60" viewBox="0 0 117 60" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M51 26.25L58.5 33.75L66 26.25" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
-                        </svg>
+                        </svg>                
+<svg class="arrowMobile" width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M4.5 6.75L9 11.25L13.5 6.75" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
                     </div>
                     <div class="moreQuestion-questions__quest-description">
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa, mollitia quis. Error, tenetur reiciendis. Quidem quis culpa harum ipsum magnam eveniet debitis, consequuntur similique neque corporis explicabo quos commodi incidunt ratione voluptatibus, laboriosam, repellendus perspiciatis officia reiciendis nihil animi consequatur aspernatur. Illum aut magni voluptas architecto! Adipisci veniam, laborum repellat similique culpa, perferendis accusantium quae nostrum eius expedita quas in, id doloremque consequatur aliquam officia dicta enim magnam est recusandae dolor harum vero? Architecto assumenda quo fuga id nam, non temporibus neque expedita. Consectetur vero illum expedita nisi, nobis obcaecati facere nam itaque ex, voluptatum quod facilis dolores dolorum pariatur! Laboriosam atque consectetur nostrum suscipit enim quam provident molestiae dolorem accusantium voluptate! In, omnis unde! Maxime distinctio suscipit officiis facere laudantium reiciendis officia, molestias laboriosam earum amet in veniam repudiandae voluptate deleniti, perferendis ut ducimus nulla, fuga ipsum esse voluptatem. Doloremque debitis, modi nobis nostrum natus quidem dicta. Sequi fugiat assumenda, voluptate eum vitae labore hic ab maxime quasi mollitia iste adipisci nobis totam quis dolorem officia. Magnam molestias cumque unde quae! Iste velit et provident eos quam quisquam cum hic ipsa in repudiandae atque numquam quidem, aliquam sit nobis quaerat vel beatae tempore sequi rem reiciendis id. Consequuntur natus expedita, doloribus nam a placeat voluptate dolore nobis facilis reprehenderit commodi quibusdam? Quae ullam id repellat voluptates dolore, non quis delectus eligendi provident amet sed, sit illum voluptatem culpa quas obcaecati magni accusantium, laudantium asperiores impedit ipsa? Libero reiciendis, saepe laudantium quis, debitis cum, non dignissimos iste sapiente magnam id. Ratione nostrum laborum architecto vero, mollitia sequi quas? Odio at facilis neque, alias illo dolor deserunt sapiente numquam debitis quis expedita, eligendi itaque. Repudiandae nam fugiat aperiam, magni error cum vel vero. Numquam blanditiis quas debitis dolores tempore voluptatem sit cum beatae sequi minima, dignissimos facere impedit facilis natus repellat autem ut, eaque id molestiae? Qui, recusandae, sed voluptatem tenetur nihil eaque eius quas expedita fuga obcaecati non! Ut aspernatur qui dolorum enim omnis tempora vero dignissimos, blanditiis labore quas sequi aliquid eveniet consequuntur maiores. Rerum iusto accusantium enim, voluptas deserunt saepe placeat illum facere est fugiat nobis debitis assumenda magnam excepturi quam possimus illo dolores delectus laborum facilis tenetur! Vitae praesentium eos a nam inventore iusto sit, aperiam nostrum! Eaque pariatur illum suscipit error, architecto quasi recusandae corrupti quos molestiae deserunt quo laborum earum officiis, tempore ad quis? Accusamus nihil expedita obcaecati laborum porro rem eligendi doloremque quis tenetur, sit inventore nam laudantium itaque ea unde quidem atque voluptatem corrupti. Possimus obcaecati quas dolor tempore minus velit inventore doloremque voluptatem praesentium blanditiis, recusandae veritatis cumque doloribus, rem id! Mollitia itaque nobis harum. Temporibus animi voluptates, earum, ratione odio quaerat esse eaque velit tenetur, quidem molestiae nobis? Iure ratione, distinctio ipsam fugit recusandae tempore provident placeat nihil ducimus repellendus excepturi doloremque sequi perspiciatis repellat, rem facilis quo optio officia impedit mollitia pariatur ex aspernatur dolor! Modi a animi natus praesentium quod, dolores quibusdam, nisi atque culpa voluptatibus aperiam cumque! Temporibus quidem quia ipsa animi magnam commodi dolore odio consequuntur est maxime, inventore earum. Explicabo voluptatum impedit id similique officiis totam dignissimos, possimus voluptate, eveniet cum harum corrupti sint nam omnis dolorem libero placeat quae beatae ipsum laborum quod mollitia consequuntur! Amet aliquid, dicta quidem quaerat sequi, architecto ex ab blanditiis veritatis in cum distinctio rem dolor sapiente. Numquam, rerum earum architecto quis voluptas magni ipsam sed similique labore, impedit error quam sapiente molestias magnam, adipisci non! Quo eos id libero aspernatur doloremque aliquam laborum illo, at exercitationem autem nisi sint molestias consequuntur minus! Non dolorum animi provident sed delectus modi consectetur placeat dolorem sint iure alias corporis nulla ab laudantium, maiores officia officiis sit optio? Dolor, architecto unde! Odio ut nam doloribus autem ab possimus laudantium voluptas sed ratione, et ex consectetur hic temporibus nisi dolorem numquam ad ipsam itaque? Voluptatibus asperiores corporis corrupti molestias amet, ipsa doloribus eos assumenda. Molestiae qui, soluta incidunt dolorum dolores nam facere, animi in nulla quos sit odio quasi! Suscipit enim pariatur facilis ipsum velit modi quaerat eaque itaque amet eos error, sequi molestiae laudantium esse odio consequuntur vitae voluptate architecto fugiat ut! Dicta, quos excepturi dignissimos, officiis voluptas maxime optio magnam illum perspiciatis perferendis adipisci unde, molestias saepe nesciunt omnis porro nemo veniam vel ex ab dolorem reiciendis quidem. Voluptas cumque fuga dignissimos aliquam error culpa, cupiditate voluptatem quam, enim ex, doloremque quo facere obcaecati totam temporibus molestiae necessitatibus rem quas placeat sapiente ipsa nobis minus nulla! Necessitatibus vero nulla voluptate impedit. Nemo, neque quae esse architecto, ut natus minus ab consectetur expedita sapiente porro sint suscipit enim itaque exercitationem, quos maxime unde provident qui accusamus! Cumque, enim eaque nisi nulla consequatur cupiditate incidunt, explicabo repudiandae numquam atque similique fugiat blanditiis iste tempore eligendi voluptatibus quisquam? Cum, nulla modi? Dignissimos vel sunt quae illo in. Modi dolorem nesciunt deserunt minus cumque et quis, repellat porro est laboriosam necessitatibus sed mollitia amet rerum, iste corrupti, laudantium alias culpa optio autem molestias illo impedit fugit sapiente. Sapiente perferendis autem porro illo. Non dicta veritatis ea hic dolorum repudiandae aliquam quis alias ad placeat officia, pariatur cumque molestias quod fugit eum a veniam, sequi eius odio itaque doloribus assumenda. Excepturi cumque rerum suscipit voluptate error aliquam officiis, pariatur accusantium. Corrupti debitis delectus eius illum natus magnam fugiat omnis aperiam ea. Provident, ea nihil. Cum incidunt porro numquam, voluptatibus, at corporis ad, dignissimos vel perspiciatis delectus sequi. Esse a sapiente iste voluptatibus! Assumenda minima similique odit error autem ducimus sint odio, esse eveniet provident sed quaerat, pariatur unde iure necessitatibus perspiciatis? Omnis odit et quas, enim unde, impedit sint facilis voluptatibus quibusdam ad tenetur quod similique. Hic earum temporibus mollitia iusto aspernatur aliquid saepe consequuntur facere molestiae, natus cumque eum culpa voluptas eligendi modi ipsam aut architecto nisi ducimus dignissimos quisquam. Placeat incidunt vero earum iure quo blanditiis a atque illum, quidem sit aperiam harum molestiae libero ipsum autem odit quam voluptatum officia ratione non adipisci voluptas assumenda praesentium dicta? Inventore non nam impedit nesciunt consequuntur architecto omnis beatae, cum maxime quia. Impedit veniam deleniti voluptatem numquam!
@@ -1324,6 +1427,13 @@
         </div>
         <div class="modal-descfription">
             Нажимая кнопку “отправить” вы соглашаетесь с условиями нашего <a href="/">клиентского соглашения</a>
+        </div>
+    </div>
+    <div class="mobile-menu">
+        <div class="mobile-menu__close" onclick="closeMenuMobile()">
+            <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M26 14L14 26M14 14L26 26" stroke="#FEC400" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
         </div>
     </div>
     <script src="./src/js/header.js"></script>

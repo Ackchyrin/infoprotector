@@ -1,0 +1,32 @@
+.mobile-menu{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 100001;
+    background: #1E272E;
+    padding: 15px;
+    transform-origin: right;
+    transition: .4s;
+    transform: scaleX(0);
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+}
+
+.mobile-menu.active{
+    transform: scaleX(1);
+}
+
+.mobile-menu__close{
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    cursor: pointer;
+    display: flex;
+}
+
+.mobile-menu .header-menu__item{
+    font-size: 20px;
+}

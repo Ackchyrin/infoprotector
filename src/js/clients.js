@@ -5,8 +5,22 @@ const swiper = new Swiper('.swiper-clients', {
       nextEl: '.clients-swiper__container .swiper-button-next',
       prevEl: '.clients-swiper__container .swiper-button-prev',
     },
-    slidesPerView: 4,
-    spaceBetween: 20
+    slidesPerView: 1.1,
+    spaceBetween: 12,
+    breakpoints: {
+      800: {
+        slidesPerView: 2,
+        spaceBetween: 20,
+      },
+      1350: {
+        slidesPerView: 3,
+        spaceBetween: 20,
+      },
+      1800: {
+        slidesPerView: 4,
+        spaceBetween: 20
+      }
+    }
 });
 
 document.querySelectorAll('.clients-swiper').forEach(el=>el.querySelector('.clients-swiper__visible').addEventListener('click',()=>{el.classList.add('active')}))

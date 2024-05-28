@@ -100,3 +100,48 @@
 .header.active .header-logo{
     display: block;
 }
+
+.header-menu__burger{
+    background-color: #FEC400;
+    border-radius: 15px;
+    padding: 10px 15px 12px;
+    cursor: pointer;
+    display: none;
+}
+
+@media screen and (max-width:1750px){
+    .header.active .header-logo{
+        display: none;
+    }
+
+    .header-link__social{
+        display: none;
+    }
+
+    .header-link__login{
+        margin: 0;
+    }
+    
+}
+
+@media screen and (max-width:1440px){
+    .header-menu__item {
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width:1280px){
+
+    .header-menu__burger{
+        display: flex;
+    }
+
+    .header-menu{
+        display: none;
+    }
+    
+    .header-conainer{
+        padding: 16px 8px;
+    }
+
+}
