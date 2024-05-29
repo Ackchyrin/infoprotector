@@ -183,6 +183,11 @@
         width: 1210px;
     }
 
+    .clients-title{
+        text-align: left;
+        width: 100%;
+    }
+
 }
 
 @media screen and (max-width:1350px){
@@ -195,8 +200,6 @@
     .clients-title{
         font-size: 42px;
         line-height: 49.77px;
-        text-align: left;
-        width: 100%;
     }
 
     .clients-swiper__container{
