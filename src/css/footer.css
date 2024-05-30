@@ -138,6 +138,7 @@
     margin-top: 40px;
     padding-bottom: 36px;
     display: flex;
+    width: fit-content;
 }
 
 .footer-contacts__politics:hover{
@@ -148,7 +149,7 @@
 
     .footer{
         margin: 50px auto 0 auto;
-        max-width: 99vw;
+        max-width: 85%;
         width: 100%;
     }
 

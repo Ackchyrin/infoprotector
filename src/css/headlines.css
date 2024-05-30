@@ -102,14 +102,18 @@
 
 @media screen and (max-width:1800px){
 
-    .headlines-info__guarantees{
-        flex-direction: column;
+    .headlines{
+        max-width: 92%;
+        margin-left: auto;
+    }
+
+    .headlines-info{
+        margin-left: auto;
+        flex-basis: 49%;
     }
 
     .headlines-info__guarantees-item{
-        flex-direction: row;
         gap: 8px;
-        justify-content: start;
         padding: 15px 10px;
     }
 
@@ -126,10 +130,6 @@
         margin-top: 30px;
     }
 
-    .headlines-info{
-        margin-left: 20px;
-        flex-basis: 49%;
-    }
 
     .headlines-iframe{
         flex-basis: 49%;
@@ -155,10 +155,6 @@
         line-height: 32px;
     }
 
-    .headlines-info__guarantees-item span{
-        text-align: left;   
-    }
-
     .headlines-info__guarantees{
         gap: 5px;
     }
@@ -176,9 +172,12 @@
 
 @media screen and (max-width:880px){
 
+    
     .headlines{
         gap: 24px;
         flex-direction: column;
+        margin: 0;
+        max-width: 100%;
     }
 
     .headlines-info{

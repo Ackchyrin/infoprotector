@@ -162,6 +162,16 @@
     transition: .4s;
 }
 
+.clients-swiper__container .swiper-button-prev rect,
+.clients-swiper__container .swiper-button-next rect{
+    transition: .4s;
+}
+
+.clients-swiper__container .swiper-button-prev:hover rect,
+.clients-swiper__container .swiper-button-next:hover rect{
+    fill: #FFA801;
+}
+
 .clients-swiper__container .swiper-button-prev{
     left: -75px;
 }

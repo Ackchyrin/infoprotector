@@ -29,4 +29,5 @@
 
 .mobile-menu .header-menu__item{
     font-size: 20px;
+    width: fit-content;
 }

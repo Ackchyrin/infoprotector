@@ -61,6 +61,11 @@
 
 .registration-info__attemption-description a{
     color:#808E9B;
+    transition: .4s;
+}
+
+.registration-info__attemption-description a:hover{
+    color: #FEC400;
 }
 
 .registration-form{
@@ -82,11 +87,19 @@
     letter-spacing: 0.01em;
     color: white;
     border: none;
+    transition: .4s;
 }
-
 
 .registration-form input::placeholder{
     color: #808E9B;
+}
+
+.registration-form input:focus{
+    background-color: #262D32;
+}
+
+.registration-form input:focus::placeholder{
+    color: white;
 }
 
 .registration-form__checkbox{
@@ -179,7 +192,7 @@
 
     .registration{
         margin: 50px auto 0 auto;
-        max-width: 99vw;
+        max-width: 85%;
         width: 100%;
     }
 

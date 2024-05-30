@@ -9,6 +9,7 @@ window.addEventListener('scroll', function() {
 document.addEventListener("DOMContentLoaded", function() {
     const sections = document.querySelectorAll(".menuScroll");
     const menuItems = document.querySelectorAll(".header-menu__item-scroll");
+    let currentActiveSectionId = null;
 
     function isInViewport(element) {
         const rect = element.getBoundingClientRect();
@@ -21,17 +22,21 @@ document.addEventListener("DOMContentLoaded", function() {
     }
 
     function updateMenu() {
-        let activeSectionId = null;
+        let newActiveSectionId = null;
 
         sections.forEach(section => {
             if (isInViewport(section)) {
-                activeSectionId = section.getAttribute("id");
+                newActiveSectionId = section.getAttribute("id");
             }
         });
 
+        if (newActiveSectionId) {
+            currentActiveSectionId = newActiveSectionId;
+        }
+
         menuItems.forEach(item => {
             const itemSectionId = item.getAttribute("data-section");
-            if (itemSectionId === activeSectionId) {
+            if (itemSectionId === currentActiveSectionId) {
                 item.classList.add("active");
             } else {
                 item.classList.remove("active");
@@ -71,3 +76,4 @@ function closeMenuMobile(){
     document.querySelector('.mobile-menu').classList.remove('active')
 }
 
+document.querySelector('.header-logo').addEventListener('click',()=>{document.querySelector('.header-menu__item').click()})

@@ -22,6 +22,15 @@
 .header-logo{
     max-width: 330px;
     display: none;
+    cursor: pointer;
+}
+
+.header-logo .pathHover{
+    transition: .4s;
+}
+
+.header-logo:hover .pathHover{
+    fill: #FEC400;
 }
 
 .header-menu{
@@ -60,6 +69,11 @@
 .header-link__social{
     width: 46px;
     height: 46px;
+    transition: .4s;
+}
+
+.header-link__social svg,
+.header-link__social svg rect{
     transition: .4s;
 }
 

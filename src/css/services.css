@@ -65,7 +65,7 @@
     transition: .4s;
 }
 
-.services-item__visible-top:hover .arrowAnim{
+.services-list__item-visible:hover .arrowAnim{
     margin: -10px -10px 0 0;
 }
 
@@ -209,7 +209,7 @@
 
     .services{
         margin: 50px auto 0 auto;
-        max-width: 99vw;
+        max-width: 85%;
         width: 100%;
     }
 
