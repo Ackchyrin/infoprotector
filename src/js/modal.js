@@ -15,3 +15,7 @@ document.addEventListener('keydown', function(event){
         closeModal()
     }
 })
+
+document.querySelector('.modal-checkbox').addEventListener("click",()=>{document.querySelector('.modal-checkbox').classList.toggle('active')})
+
+openModal()

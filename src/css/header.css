@@ -125,7 +125,7 @@
 
 @media screen and (max-width:1750px){
     .header.active .header-logo{
-        display: none;
+        display: block;
     }
 
     .header-link__social{
@@ -134,6 +134,11 @@
 
     .header-link__login{
         margin: 0;
+    }
+
+    .header-menu__item{
+        padding-left: 8px;
+        padding-right: 8px;
     }
     
 }
@@ -156,6 +161,10 @@
     
     .header-conainer{
         padding: 16px 8px;
+    }
+
+    .header.active .header-link__login{
+        display: none;
     }
 
 }

@@ -60,7 +60,7 @@ document.addEventListener("DOMContentLoaded", function() {
     });
 });
 
-document.querySelector('.mobile-menu').innerHTML = document.querySelector('.mobile-menu').innerHTML + document.querySelector('.header-menu').innerHTML
+document.querySelector('.mobile-menu__bottom').innerHTML = document.querySelector('.header-menu').innerHTML
 
 document.querySelectorAll('.mobile-menu .header-menu__item').forEach(el=>{
     el.addEventListener('click',closeMenuMobile)

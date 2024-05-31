@@ -44,6 +44,7 @@
     position: absolute;
     top: 30px;
     right: 30px;
+    height: fit-content;
 }
 
 .modal-title{
@@ -75,6 +76,18 @@
     max-width: 685px;
 }
 
+.modal-container input::placeholder{
+    color: #808E9B;
+}
+
+.modal-container input:focus{
+    background-color: #262D32;
+}
+
+.modal-container input:focus::placeholder{
+    color: white;
+}
+
 .modal-button{
     text-decoration: none;
     background-color: #FEC400;
@@ -95,7 +108,7 @@
     background-color: #FFA801;
 }
 
-.modal-descfription{
+.modal-description{
     font-size: 20px;
     font-weight: 400;
     line-height: 23.7px;
@@ -104,12 +117,103 @@
     margin-top: 15px;
 }
 
-.modal-descfription a{
+.modal-description a{
     color: white;
     transition: .4s;
     
 }
 
-.modal-descfription a:hover{
+.modal-description a:hover{
     color: #FEC400;
+}
+
+.modal-container__mobile,
+.modal-checkbox{
+    display: none;
+}
+
+.modal-checkbox .modal-checkbox__check svg{
+    opacity: 0;
+}
+
+.modal-checkbox:hover .modal-checkbox__check svg{
+    opacity: 1;
+}
+
+.modal-checkbox.active .modal-checkbox__check svg{
+    opacity: 1;
+}
+
+.modal-checkbox.active .modal-checkbox__check svg path{
+    stroke: #05C46B;
+    opacity: 1;
+}
+
+.modal-checkbox.active:hover .modal-checkbox__check svg path{
+    stroke: white;
+}
+
+@media screen and (max-width:1200px){
+    
+    .modal{
+        padding: 32px 16px;
+        max-width: 359px;
+    }
+
+    .modal-title{
+        font-size: 24px;
+        line-height: 28.44px;
+        max-width: 287px;
+    }
+
+    .modal-container{
+        margin-top: 24px;
+        gap: 8px;
+    }
+
+    .modal-container input{
+        padding: 20px 12px;
+        font-size: 16px;
+        line-height: 18.96px;
+    }
+
+    .modal-container__mobile{
+        display: block;
+    }
+
+    .modal-checkbox{
+        display: flex;
+        gap: 9px;
+        align-items: center;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 16.59px;
+        letter-spacing: 0.01em;
+        color: #FFFFFF;
+    }
+
+    .modal-checkbox__check{
+        width: 35px;
+        height: 35px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        background-color: #1E272E;
+        border-radius: 15px;
+    }
+
+    .modal-button{
+        margin-top: 24px;
+        padding: 12.5px 0 14.5px;
+        font-size: 16px;
+        line-height: 18.96px;
+    }
+
+    .modal-description{
+        margin-top: 8px;
+        font-size: 14px;
+        line-height: 16.59px;
+    }
+
 }
