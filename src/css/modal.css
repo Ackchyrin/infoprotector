@@ -216,4 +216,9 @@
         line-height: 16.59px;
     }
 
+    .modal-close{
+        top: 16px;
+        height: 16px;
+    }
+
 }
