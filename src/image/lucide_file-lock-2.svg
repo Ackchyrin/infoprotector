@@ -1,0 +1,15 @@
+<?xml version="1.0" standalone="no"?>
+<svg id="lucide:file-lock-2" width="110" height="110" viewBox="0 0 110 110" fill="none" xmlns="http://www.w3.org/2000/svg" style="max-width: 100%; max-height: 100%;">
+<path d="M18.3335 100.833H82.5002C84.9313 100.833 87.2629 99.8676 88.982 98.1485C90.7011 96.4294 91.6668 94.0978 91.6668 91.6667V32.0834L68.7502 9.16669H27.5002C25.069 9.16669 22.7374 10.1325 21.0184 11.8515C19.2993 13.5706 18.3335 15.9022 18.3335 18.3334V22.9167" stroke="#FEC400" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="0,0,0,230.79025268554688"><animate attributeType="XML" attributeName="stroke-dasharray" repeatCount="1" dur="0.819672131147541s" values="0,0,0,230.79025268554688; 
+          0,115.39512634277344,115.39512634277344,0; 
+          230.79025268554688,0,0,0" keyTimes="0; 0.5; 1" fill="freeze"></animate></path>
+<path d="M64.1667 9.16669V27.5C64.1667 29.9312 65.1325 32.2628 66.8516 33.9818C68.5707 35.7009 70.9023 36.6667 73.3334 36.6667H91.6667" stroke="#FEC400" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="0,0,0,51.06565856933594"><animate attributeType="XML" attributeName="stroke-dasharray" repeatCount="1" dur="0.819672131147541s" values="0,0,0,51.06565856933594; 
+          0,25.53282928466797,25.53282928466797,0; 
+          51.06565856933594,0,0,0" keyTimes="0; 0.5; 1" fill="freeze"></animate></path>
+<path d="M41.2501 59.5834H13.7501C11.2188 59.5834 9.16675 61.6354 9.16675 64.1667V77.9167C9.16675 80.448 11.2188 82.5 13.7501 82.5H41.2501C43.7814 82.5 45.8334 80.448 45.8334 77.9167V64.1667C45.8334 61.6354 43.7814 59.5834 41.2501 59.5834Z" stroke="#FEC400" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="0,0,0,111.3019027709961"><animate attributeType="XML" attributeName="stroke-dasharray" repeatCount="1" dur="0.819672131147541s" values="0,0,0,111.3019027709961; 
+          0,55.65095138549805,55.65095138549805,0; 
+          111.3019027709961,0,0,0" keyTimes="0; 0.5; 1" fill="freeze"></animate></path>
+<path d="M36.6668 59.5833V50.4167C36.6668 47.9855 35.7011 45.6539 33.982 43.9349C32.2629 42.2158 29.9313 41.25 27.5002 41.25C25.069 41.25 22.7374 42.2158 21.0184 43.9349C19.2993 45.6539 18.3335 47.9855 18.3335 50.4167V59.5833" stroke="#FEC400" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="0,0,0,47.13126754760742"><animate attributeType="XML" attributeName="stroke-dasharray" repeatCount="1" dur="0.819672131147541s" values="0,0,0,47.13126754760742; 
+          0,23.56563377380371,23.56563377380371,0; 
+          47.13126754760742,0,0,0" keyTimes="0; 0.5; 1" fill="freeze"></animate></path>
+</svg>

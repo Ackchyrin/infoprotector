@@ -36,3 +36,25 @@ if(window.innerWidth <= 880){
     })
 
 }
+
+document.addEventListener("DOMContentLoaded", function() {
+    const svgContainer = document.querySelector(".service-animation");
+    const circlePath = document.getElementById("circle-path");
+    const plusPath = document.getElementById("plus-path");
+
+    svgContainer.addEventListener("mouseover", () => {
+        circlePath.classList.remove("circle-animate-out");
+        plusPath.classList.remove("plus-animate-out");
+
+        circlePath.classList.add("circle-animate-in");
+        plusPath.classList.add("plus-animate-in");
+    });
+
+    svgContainer.addEventListener("mouseout", () => {
+        circlePath.classList.remove("circle-animate-in");
+        plusPath.classList.remove("plus-animate-in");
+
+        circlePath.classList.add("circle-animate-out");
+        plusPath.classList.add("plus-animate-out");
+    });
+});

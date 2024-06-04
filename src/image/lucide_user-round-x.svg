@@ -1,0 +1,12 @@
+<?xml version="1.0" standalone="no"?>
+<svg id="lucide:user-round-x" width="110" height="110" viewBox="0 0 110 110" fill="none" xmlns="http://www.w3.org/2000/svg" style="max-width: 100%; max-height: 100%;">
+<path d="M9.16675 96.25C9.16674 89.8704 10.8313 83.6011 13.9959 78.0616C17.1605 72.5222 21.7157 67.9043 27.2113 64.6642C32.7069 61.4241 38.9529 59.674 45.3319 59.5867C51.711 59.4995 58.0025 61.0781 63.5847 64.1667" stroke="#FEC400" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="0,0,0,76.12596130371094"><animate attributeType="XML" attributeName="stroke-dasharray" repeatCount="1" dur="0.7246376811594203s" values="0,0,0,76.12596130371094; 
+          0,38.06298065185547,38.06298065185547,0; 
+          76.12596130371094,0,0,0" keyTimes="0; 0.5; 1" fill="freeze"></animate></path>
+<path d="M45.8334 59.5833C58.4899 59.5833 68.7501 49.3232 68.7501 36.6667C68.7501 24.0101 58.4899 13.75 45.8334 13.75C33.1769 13.75 22.9167 24.0101 22.9167 36.6667C22.9167 49.3232 33.1769 59.5833 45.8334 59.5833Z" stroke="#FEC400" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="0,0,0,144.00991821289062"><animate attributeType="XML" attributeName="stroke-dasharray" repeatCount="1" dur="0.7246376811594203s" values="0,0,0,144.00991821289062; 
+          0,72.00495910644531,72.00495910644531,0; 
+          144.00991821289062,0,0,0" keyTimes="0; 0.5; 1" fill="freeze"></animate></path>
+<path d="M77.9167 77.9167L100.833 100.833M100.833 77.9167L77.9167 100.833" stroke="#FEC400" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="0,0,0,64.81707763671875"><animate attributeType="XML" attributeName="stroke-dasharray" repeatCount="1" dur="0.7246376811594203s" values="0,0,0,64.81707763671875; 
+          0,32.408538818359375,32.408538818359375,0; 
+          64.81707763671875,0,0,0" keyTimes="0; 0.5; 1" fill="freeze"></animate></path>
+</svg>

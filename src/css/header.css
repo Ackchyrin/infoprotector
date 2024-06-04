@@ -55,6 +55,7 @@
     pointer-events: none;
     cursor: default;
     background-color: #FEC400;
+    color: #1E272E;
 }
 
 .header-menu__item:hover{

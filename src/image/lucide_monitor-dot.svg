@@ -1,0 +1,9 @@
+<?xml version="1.0" standalone="no"?>
+<svg id="lucide:monitor-dot" width="110" height="110" viewBox="0 0 110 110" fill="none" xmlns="http://www.w3.org/2000/svg" style="max-width: 100%; max-height: 100%;">
+<path d="M87.0835 41.25C94.6774 41.25 100.833 35.0939 100.833 27.5C100.833 19.9061 94.6774 13.75 87.0835 13.75C79.4896 13.75 73.3335 19.9061 73.3335 27.5C73.3335 35.0939 79.4896 41.25 87.0835 41.25Z" stroke="#FEC400" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="0,0,0,86.40535736083984"><animate attributeType="XML" attributeName="stroke-dasharray" repeatCount="1" dur="0.7936507936507936s" values="0,0,0,86.40535736083984; 
+          0,43.20267868041992,43.20267868041992,0; 
+          86.40535736083984,0,0,0" keyTimes="0; 0.5; 1" fill="freeze"></animate></path>
+<path d="M100.833 55V68.75C100.833 71.1812 99.8676 73.5127 98.1486 75.2318C96.4295 76.9509 94.0979 77.9167 91.6667 77.9167H18.3334C15.9023 77.9167 13.5707 76.9509 11.8516 75.2318C10.1325 73.5127 9.16675 71.1812 9.16675 68.75V22.9167C9.16675 20.4855 10.1325 18.1539 11.8516 16.4349C13.5707 14.7158 15.9023 13.75 18.3334 13.75H59.5834M55.0001 77.9167V96.25M36.6667 96.25H73.3334" stroke="#FEC400" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="0,0,0,272.363525390625"><animate attributeType="XML" attributeName="stroke-dasharray" repeatCount="1" dur="0.7936507936507936s" values="0,0,0,272.363525390625; 
+          0,136.1817626953125,136.1817626953125,0; 
+          272.363525390625,0,0,0" keyTimes="0; 0.5; 1" fill="freeze"></animate></path>
+</svg>

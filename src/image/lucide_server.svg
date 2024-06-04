@@ -1,0 +1,12 @@
+<?xml version="1.0" standalone="no"?>
+<svg id="lucide:server" width="110" height="110" viewBox="0 0 110 110" fill="none" xmlns="http://www.w3.org/2000/svg" style="max-width: 100%; max-height: 100%;">
+<path d="M91.6667 9.16669H18.3334C13.2708 9.16669 9.16675 13.2707 9.16675 18.3334V36.6667C9.16675 41.7293 13.2708 45.8334 18.3334 45.8334H91.6667C96.7294 45.8334 100.833 41.7293 100.833 36.6667V18.3334C100.833 13.2707 96.7294 9.16669 91.6667 9.16669Z" stroke="#FEC400" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="0,0,0,240.93685913085938"><animate attributeType="XML" attributeName="stroke-dasharray" repeatCount="1" dur="0.9433962264150944s" values="0,0,0,240.93685913085938; 
+          0,120.46842956542969,120.46842956542969,0; 
+          240.93685913085938,0,0,0" keyTimes="0; 0.5; 1" fill="freeze"></animate></path>
+<path d="M91.6667 64.1667H18.3334C13.2708 64.1667 9.16675 68.2707 9.16675 73.3334V91.6667C9.16675 96.7293 13.2708 100.833 18.3334 100.833H91.6667C96.7294 100.833 100.833 96.7293 100.833 91.6667V73.3334C100.833 68.2707 96.7294 64.1667 91.6667 64.1667Z" stroke="#FEC400" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="0,0,0,240.93634033203125"><animate attributeType="XML" attributeName="stroke-dasharray" repeatCount="1" dur="0.9433962264150944s" values="0,0,0,240.93634033203125; 
+          0,120.46817016601562,120.46817016601562,0; 
+          240.93634033203125,0,0,0" keyTimes="0; 0.5; 1" fill="freeze"></animate></path>
+<path d="M27.5 27.5H27.5458M27.5 82.5H27.5458" stroke="#FEC400" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="0,0,0,0.0915985107421875"><animate attributeType="XML" attributeName="stroke-dasharray" repeatCount="1" dur="0.9433962264150944s" values="0,0,0,0.0915985107421875; 
+          0,0.04579925537109375,0.04579925537109375,0; 
+          0.0915985107421875,0,0,0" keyTimes="0; 0.5; 1" fill="freeze"></animate></path>
+</svg>
