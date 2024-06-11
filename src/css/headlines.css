@@ -100,7 +100,7 @@
     display: none;
 }
 
-@media screen and (max-width:1800px){
+/* @media screen and (max-width:1800px){
 
     .headlines-info{
         margin-left: auto;
@@ -176,7 +176,7 @@
         width: fit-content;
     }
 
-}
+} */
 
 @media screen and (max-width:880px){
 
