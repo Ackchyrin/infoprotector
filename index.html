@@ -2,7 +2,7 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, user-scalable=no">
     <title>Инфопротектор</title>
     <link rel="stylesheet" href="./src/css/style.css">
     <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;apikey=33a7902a-5bed-4ed3-9ec9-4e334e35b1d8" type="text/javascript"></script>
@@ -151,7 +151,9 @@
                 </div>
             </div>
             <div class="headlines-iframe">
-                <img src="./src/image/FrameHeadlines.png" alt="Инфопротектор презентация">
+                <video autoplay muted>
+                    <source src="./src/image/vidDesc.webm">
+                </video>
                 <div class="headlines-mobile">
                     <div class="headlines-info__link-button">
                         Зарегистрироваться
@@ -169,11 +171,14 @@
             <div class="services-list">
                 <div class="services-list__item">
                     <div class="services-list__item-visible">
-                        <div class="services-item__visible-top service-animation">
-                            <svg id="lucide:circle-plus" width="110" height="110" viewBox="0 0 110 110" fill="none" xmlns="http://www.w3.org/2000/svg" style="max-width: 100%; max-height: 100%;">
-                                <path id="circle-path" d="M55.0001 100.833C80.3131 100.833 100.833 80.3131 100.833 55C100.833 29.687 80.3131 9.16669 55.0001 9.16669C29.687 9.16669 9.16675 29.687 9.16675 55C9.16675 80.3131 29.687 100.833 55.0001 100.833Z" stroke="#FEC400" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"></path>
-                                <path id="plus-path" d="M36.6667 55H73.3334M55.0001 36.6667V73.3334" stroke="#FEC400" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"></path>
-                            </svg>               
+                        <div class="services-item__visible-top ">
+                            <div class="service-animation">
+                                <svg width="110" height="110" viewBox="0 0 110 110" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M91.6667 9.16669H18.3333C13.2707 9.16669 9.16667 13.2707 9.16667 18.3334V36.6667C9.16667 41.7293 13.2707 45.8334 18.3333 45.8334H91.6667C96.7293 45.8334 100.833 41.7293 100.833 36.6667V18.3334C100.833 13.2707 96.7293 9.16669 91.6667 9.16669Z" stroke="#808E9B" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M91.6667 64.1667H18.3333C13.2707 64.1667 9.16667 68.2707 9.16667 73.3334V91.6667C9.16667 96.7293 13.2707 100.833 18.3333 100.833H91.6667C96.7293 100.833 100.833 96.7293 100.833 91.6667V73.3334C100.833 68.2707 96.7293 64.1667 91.6667 64.1667Z" stroke="#808E9B" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M27.5 27.5H27.5458M27.5 82.5H27.5458" stroke="#808E9B" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </div>
                             <svg class="arrowAnim" width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M11.7504 28.2496L28.2496 11.7504M28.2496 11.7504H11.7504M28.2496 11.7504V28.2496" stroke="#FEC400" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
                             </svg>
@@ -196,10 +201,12 @@
                 <div class="services-list__item">
                     <div class="services-list__item-visible">
                         <div class="services-item__visible-top">
-                            <svg width="110" height="110" viewBox="0 0 110 110" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M87.0833 50.4167H22.9167C17.8541 50.4167 13.75 54.5207 13.75 59.5834V91.6667C13.75 96.7293 17.8541 100.833 22.9167 100.833H87.0833C92.146 100.833 96.25 96.7293 96.25 91.6667V59.5834C96.25 54.5207 92.146 50.4167 87.0833 50.4167Z" stroke="#808E9B" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
-                                <path d="M32.0833 50.4167V32.0834C32.0833 26.0055 34.4978 20.1765 38.7955 15.8788C43.0932 11.5811 48.9221 9.16669 55 9.16669C61.0779 9.16669 66.9068 11.5811 71.2045 15.8788C75.5022 20.1765 77.9167 26.0055 77.9167 32.0834V50.4167" stroke="#808E9B" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
-                            </svg>
+                            <div class="service-animation">
+                                <svg width="110" height="110" viewBox="0 0 110 110" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M87.0833 50.4167H22.9167C17.8541 50.4167 13.75 54.5207 13.75 59.5834V91.6667C13.75 96.7293 17.8541 100.833 22.9167 100.833H87.0833C92.146 100.833 96.25 96.7293 96.25 91.6667V59.5834C96.25 54.5207 92.146 50.4167 87.0833 50.4167Z" stroke="#808E9B" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M32.0833 50.4167V32.0834C32.0833 26.0055 34.4978 20.1765 38.7955 15.8788C43.0932 11.5811 48.9221 9.16669 55 9.16669C61.0779 9.16669 66.9068 11.5811 71.2045 15.8788C75.5022 20.1765 77.9167 26.0055 77.9167 32.0834V50.4167" stroke="#808E9B" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </div>
                             <svg class="arrowAnim" width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M11.7504 28.2496L28.2496 11.7504M28.2496 11.7504H11.7504M28.2496 11.7504V28.2496" stroke="#FEC400" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
                             </svg>
@@ -222,12 +229,14 @@
                 <div class="services-list__item">
                     <div class="services-list__item-visible">
                         <div class="services-item__visible-top">
-                            <svg width="110" height="110" viewBox="0 0 110 110" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M18.3334 100.833H82.5C84.9312 100.833 87.2628 99.8676 88.9819 98.1485C90.7009 96.4294 91.6667 94.0978 91.6667 91.6667V32.0834L68.75 9.16669H27.5C25.0689 9.16669 22.7373 10.1325 21.0182 11.8515C19.2991 13.5706 18.3334 15.9022 18.3334 18.3334V22.9167" stroke="#808E9B" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
-                                <path d="M64.1667 9.16669V27.5C64.1667 29.9312 65.1325 32.2628 66.8515 33.9818C68.5706 35.7009 70.9022 36.6667 73.3334 36.6667H91.6667" stroke="#808E9B" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
-                                <path d="M41.25 59.5834H13.75C11.2187 59.5834 9.16669 61.6354 9.16669 64.1667V77.9167C9.16669 80.448 11.2187 82.5 13.75 82.5H41.25C43.7813 82.5 45.8334 80.448 45.8334 77.9167V64.1667C45.8334 61.6354 43.7813 59.5834 41.25 59.5834Z" stroke="#808E9B" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
-                                <path d="M36.6667 59.5833V50.4167C36.6667 47.9855 35.7009 45.6539 33.9819 43.9349C32.2628 42.2158 29.9312 41.25 27.5 41.25C25.0689 41.25 22.7373 42.2158 21.0182 43.9349C19.2991 45.6539 18.3334 47.9855 18.3334 50.4167V59.5833" stroke="#808E9B" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
-                            </svg>
+                            <div class="service-animation">
+                                <svg width="110" height="110" viewBox="0 0 110 110" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M18.3334 100.833H82.5C84.9312 100.833 87.2628 99.8676 88.9819 98.1485C90.7009 96.4294 91.6667 94.0978 91.6667 91.6667V32.0834L68.75 9.16669H27.5C25.0689 9.16669 22.7373 10.1325 21.0182 11.8515C19.2991 13.5706 18.3334 15.9022 18.3334 18.3334V22.9167" stroke="#808E9B" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M64.1667 9.16669V27.5C64.1667 29.9312 65.1325 32.2628 66.8515 33.9818C68.5706 35.7009 70.9022 36.6667 73.3334 36.6667H91.6667" stroke="#808E9B" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M41.25 59.5834H13.75C11.2187 59.5834 9.16669 61.6354 9.16669 64.1667V77.9167C9.16669 80.448 11.2187 82.5 13.75 82.5H41.25C43.7813 82.5 45.8334 80.448 45.8334 77.9167V64.1667C45.8334 61.6354 43.7813 59.5834 41.25 59.5834Z" stroke="#808E9B" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M36.6667 59.5833V50.4167C36.6667 47.9855 35.7009 45.6539 33.9819 43.9349C32.2628 42.2158 29.9312 41.25 27.5 41.25C25.0689 41.25 22.7373 42.2158 21.0182 43.9349C19.2991 45.6539 18.3334 47.9855 18.3334 50.4167V59.5833" stroke="#808E9B" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </div>
                             <svg class="arrowAnim" width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M11.7504 28.2496L28.2496 11.7504M28.2496 11.7504H11.7504M28.2496 11.7504V28.2496" stroke="#FEC400" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
                             </svg>
@@ -250,11 +259,13 @@
                 <div class="services-list__item">
                     <div class="services-list__item-visible">
                         <div class="services-item__visible-top">
-                            <svg width="110" height="110" viewBox="0 0 110 110" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M32.0834 15.3083V22.9167C32.0834 26.5634 33.532 30.0608 36.1107 32.6394C38.6893 35.218 42.1866 36.6667 45.8334 36.6667M50.4167 100.604V82.5C50.4167 80.0689 49.4509 77.7373 47.7318 76.0182C46.0128 74.2991 43.6812 73.3334 41.25 73.3334C38.8189 73.3334 36.4873 72.3676 34.7682 70.6485C33.0491 68.9294 32.0834 66.5978 32.0834 64.1667V59.5834C32.0834 57.1522 31.1176 54.8206 29.3985 53.1015C27.6794 51.3825 25.3479 50.4167 22.9167 50.4167H9.39587M98.725 68.75H77.9167C75.4856 68.75 73.154 69.7158 71.4349 71.4349C69.7158 73.154 68.75 75.4855 68.75 77.9167V98.725" stroke="#808E9B" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
-                                <path d="M55 9.16669C46.529 9.1672 38.2239 11.5153 31.0066 15.9503C23.7894 20.3853 17.9424 26.7337 14.1149 34.2907C10.2874 41.8477 8.62902 50.3175 9.32394 58.76C10.0189 67.2024 13.0399 75.2871 18.0516 82.1165C23.0633 88.9459 29.8696 94.2528 37.7149 97.4479C45.5602 100.643 54.1375 101.602 62.4946 100.217C70.8517 98.8323 78.6615 95.1587 85.0571 89.604C91.4526 84.0493 96.1837 76.8308 98.725 68.75M91.6667 27.5V18.3334C91.6667 15.9022 90.7009 13.5706 88.9818 11.8515C87.2627 10.1325 84.9312 9.16669 82.5 9.16669C80.0689 9.16669 77.7373 10.1325 76.0182 11.8515C74.2991 13.5706 73.3333 15.9022 73.3333 18.3334V27.5" stroke="#808E9B" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
-                                <path d="M96.25 27.5H68.75C66.2187 27.5 64.1666 29.552 64.1666 32.0833V45.8333C64.1666 48.3646 66.2187 50.4167 68.75 50.4167H96.25C98.7813 50.4167 100.833 48.3646 100.833 45.8333V32.0833C100.833 29.552 98.7813 27.5 96.25 27.5Z" stroke="#808E9B" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
-                            </svg>
+                            <div class="service-animation">
+                                <svg width="110" height="110" viewBox="0 0 110 110" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M32.0834 15.3083V22.9167C32.0834 26.5634 33.532 30.0608 36.1107 32.6394C38.6893 35.218 42.1866 36.6667 45.8334 36.6667M50.4167 100.604V82.5C50.4167 80.0689 49.4509 77.7373 47.7318 76.0182C46.0128 74.2991 43.6812 73.3334 41.25 73.3334C38.8189 73.3334 36.4873 72.3676 34.7682 70.6485C33.0491 68.9294 32.0834 66.5978 32.0834 64.1667V59.5834C32.0834 57.1522 31.1176 54.8206 29.3985 53.1015C27.6794 51.3825 25.3479 50.4167 22.9167 50.4167H9.39587M98.725 68.75H77.9167C75.4856 68.75 73.154 69.7158 71.4349 71.4349C69.7158 73.154 68.75 75.4855 68.75 77.9167V98.725" stroke="#808E9B" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M55 9.16669C46.529 9.1672 38.2239 11.5153 31.0066 15.9503C23.7894 20.3853 17.9424 26.7337 14.1149 34.2907C10.2874 41.8477 8.62902 50.3175 9.32394 58.76C10.0189 67.2024 13.0399 75.2871 18.0516 82.1165C23.0633 88.9459 29.8696 94.2528 37.7149 97.4479C45.5602 100.643 54.1375 101.602 62.4946 100.217C70.8517 98.8323 78.6615 95.1587 85.0571 89.604C91.4526 84.0493 96.1837 76.8308 98.725 68.75M91.6667 27.5V18.3334C91.6667 15.9022 90.7009 13.5706 88.9818 11.8515C87.2627 10.1325 84.9312 9.16669 82.5 9.16669C80.0689 9.16669 77.7373 10.1325 76.0182 11.8515C74.2991 13.5706 73.3333 15.9022 73.3333 18.3334V27.5" stroke="#808E9B" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M96.25 27.5H68.75C66.2187 27.5 64.1666 29.552 64.1666 32.0833V45.8333C64.1666 48.3646 66.2187 50.4167 68.75 50.4167H96.25C98.7813 50.4167 100.833 48.3646 100.833 45.8333V32.0833C100.833 29.552 98.7813 27.5 96.25 27.5Z" stroke="#808E9B" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </div>
                             <svg class="arrowAnim" width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M11.7504 28.2496L28.2496 11.7504M28.2496 11.7504H11.7504M28.2496 11.7504V28.2496" stroke="#FEC400" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
                             </svg>
@@ -277,11 +288,13 @@
                 <div class="services-list__item">
                     <div class="services-list__item-visible">
                         <div class="services-item__visible-top">
-                            <svg width="110" height="110" viewBox="0 0 110 110" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M9.16667 96.25C9.16666 89.8703 10.8312 83.601 13.9958 78.0616C17.1604 72.5221 21.7156 67.9042 27.2112 64.6641C32.7069 61.4241 38.9528 59.6739 45.3319 59.5867C51.7109 59.4994 58.0024 61.0781 63.5846 64.1666" stroke="#808E9B" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
-                                <path d="M45.8333 59.5833C58.4899 59.5833 68.75 49.3232 68.75 36.6667C68.75 24.0101 58.4899 13.75 45.8333 13.75C33.1768 13.75 22.9167 24.0101 22.9167 36.6667C22.9167 49.3232 33.1768 59.5833 45.8333 59.5833Z" stroke="#808E9B" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
-                                <path d="M77.9167 77.9166L100.833 100.833M100.833 77.9166L77.9167 100.833" stroke="#808E9B" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
-                            </svg>
+                            <div class="service-animation">
+                                <svg width="110" height="110" viewBox="0 0 110 110" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M9.16667 96.25C9.16666 89.8703 10.8312 83.601 13.9958 78.0616C17.1604 72.5221 21.7156 67.9042 27.2112 64.6641C32.7069 61.4241 38.9528 59.6739 45.3319 59.5867C51.7109 59.4994 58.0024 61.0781 63.5846 64.1666" stroke="#808E9B" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M45.8333 59.5833C58.4899 59.5833 68.75 49.3232 68.75 36.6667C68.75 24.0101 58.4899 13.75 45.8333 13.75C33.1768 13.75 22.9167 24.0101 22.9167 36.6667C22.9167 49.3232 33.1768 59.5833 45.8333 59.5833Z" stroke="#808E9B" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M77.9167 77.9166L100.833 100.833M100.833 77.9166L77.9167 100.833" stroke="#808E9B" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </div>
                             <svg class="arrowAnim" width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M11.7504 28.2496L28.2496 11.7504M28.2496 11.7504H11.7504M28.2496 11.7504V28.2496" stroke="#FEC400" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
                             </svg>
@@ -304,9 +317,11 @@
                 <div class="services-list__item">
                     <div class="services-list__item-visible">
                         <div class="services-item__visible-top">
-                            <svg width="110" height="110" viewBox="0 0 110 110" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M36.6667 32.0833V64.1667M55 32.0833V50.4167M73.3333 32.0833V73.3333M22.9167 13.75C20.4855 13.75 18.1539 14.7158 16.4349 16.4349C14.7158 18.1539 13.75 20.4855 13.75 22.9167M41.25 13.75H45.8333M64.1667 13.75H68.75M87.0833 13.75C89.5145 13.75 91.8461 14.7158 93.5651 16.4349C95.2842 18.1539 96.25 20.4855 96.25 22.9167M96.25 41.25V45.8333M96.25 64.1667V68.75M96.25 87.0833C96.25 89.5145 95.2842 91.8461 93.5651 93.5651C91.8461 95.2842 89.5145 96.25 87.0833 96.25M64.1667 96.25H68.75M41.25 96.25H45.8333M22.9167 96.25C20.4855 96.25 18.1539 95.2842 16.4349 93.5651C14.7158 91.8461 13.75 89.5145 13.75 87.0833M13.75 64.1667V68.75M13.75 41.25V45.8333" stroke="#808E9B" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
-                            </svg>
+                            <div class="service-animation">
+                                <svg width="110" height="110" viewBox="0 0 110 110" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M36.6667 32.0833V64.1667M55 32.0833V50.4167M73.3333 32.0833V73.3333M22.9167 13.75C20.4855 13.75 18.1539 14.7158 16.4349 16.4349C14.7158 18.1539 13.75 20.4855 13.75 22.9167M41.25 13.75H45.8333M64.1667 13.75H68.75M87.0833 13.75C89.5145 13.75 91.8461 14.7158 93.5651 16.4349C95.2842 18.1539 96.25 20.4855 96.25 22.9167M96.25 41.25V45.8333M96.25 64.1667V68.75M96.25 87.0833C96.25 89.5145 95.2842 91.8461 93.5651 93.5651C91.8461 95.2842 89.5145 96.25 87.0833 96.25M64.1667 96.25H68.75M41.25 96.25H45.8333M22.9167 96.25C20.4855 96.25 18.1539 95.2842 16.4349 93.5651C14.7158 91.8461 13.75 89.5145 13.75 87.0833M13.75 64.1667V68.75M13.75 41.25V45.8333" stroke="#808E9B" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </div>
                             <svg class="arrowAnim" width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M11.7504 28.2496L28.2496 11.7504M28.2496 11.7504H11.7504M28.2496 11.7504V28.2496" stroke="#FEC400" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
                             </svg>
@@ -329,10 +344,12 @@
                 <div class="services-list__item">
                     <div class="services-list__item-visible">
                         <div class="services-item__visible-top">
-                            <svg width="110" height="110" viewBox="0 0 110 110" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M87.0834 41.25C94.6773 41.25 100.833 35.0939 100.833 27.5C100.833 19.9061 94.6773 13.75 87.0834 13.75C79.4895 13.75 73.3334 19.9061 73.3334 27.5C73.3334 35.0939 79.4895 41.25 87.0834 41.25Z" stroke="#808E9B" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
-                                <path d="M100.833 55V68.75C100.833 71.1812 99.8676 73.5127 98.1485 75.2318C96.4294 76.9509 94.0978 77.9167 91.6667 77.9167H18.3334C15.9022 77.9167 13.5706 76.9509 11.8515 75.2318C10.1325 73.5127 9.16669 71.1812 9.16669 68.75V22.9167C9.16669 20.4855 10.1325 18.1539 11.8515 16.4349C13.5706 14.7158 15.9022 13.75 18.3334 13.75H59.5834M55 77.9167V96.25M36.6667 96.25H73.3333" stroke="#808E9B" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
-                            </svg>
+                            <div class="service-animation">
+                                <svg width="110" height="110" viewBox="0 0 110 110" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M87.0834 41.25C94.6773 41.25 100.833 35.0939 100.833 27.5C100.833 19.9061 94.6773 13.75 87.0834 13.75C79.4895 13.75 73.3334 19.9061 73.3334 27.5C73.3334 35.0939 79.4895 41.25 87.0834 41.25Z" stroke="#808E9B" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M100.833 55V68.75C100.833 71.1812 99.8676 73.5127 98.1485 75.2318C96.4294 76.9509 94.0978 77.9167 91.6667 77.9167H18.3334C15.9022 77.9167 13.5706 76.9509 11.8515 75.2318C10.1325 73.5127 9.16669 71.1812 9.16669 68.75V22.9167C9.16669 20.4855 10.1325 18.1539 11.8515 16.4349C13.5706 14.7158 15.9022 13.75 18.3334 13.75H59.5834M55 77.9167V96.25M36.6667 96.25H73.3333" stroke="#808E9B" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </div>
                             <svg class="arrowAnim" width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M11.7504 28.2496L28.2496 11.7504M28.2496 11.7504H11.7504M28.2496 11.7504V28.2496" stroke="#FEC400" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
                             </svg>
@@ -355,10 +372,12 @@
                 <div class="services-list__item">
                     <div class="services-list__item-visible">
                         <div class="services-item__visible-top">
-                            <svg width="110" height="110" viewBox="0 0 110 110" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M55 100.833C80.313 100.833 100.833 80.313 100.833 55C100.833 29.6869 80.313 9.16663 55 9.16663C29.6869 9.16663 9.16663 29.6869 9.16663 55C9.16663 80.313 29.6869 100.833 55 100.833Z" stroke="#808E9B" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
-                                <path d="M36.6666 55H73.3333M55 36.6666V73.3333" stroke="#808E9B" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
-                            </svg>
+                            <div class="service-animation">
+                                <svg width="110" height="110" viewBox="0 0 110 110" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M55 100.833C80.313 100.833 100.833 80.313 100.833 55C100.833 29.6869 80.313 9.16663 55 9.16663C29.6869 9.16663 9.16663 29.6869 9.16663 55C9.16663 80.313 29.6869 100.833 55 100.833Z" stroke="#808E9B" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M36.6666 55H73.3333M55 36.6666V73.3333" stroke="#808E9B" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </div>
                             <svg class="arrowAnim" width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M11.7504 28.2496L28.2496 11.7504M28.2496 11.7504H11.7504M28.2496 11.7504V28.2496" stroke="#FEC400" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
                             </svg>

@@ -6,4 +6,17 @@ body{
     max-width: 1920px;
     margin: 0 auto;
     position: relative;
+    transform-origin:center 0; 
+}
+
+html{
+    height: 100%;
+}
+
+@media screen and (max-width:1800px){
+    
+    body{
+        transform: scale3d(.9, .8, .5);
+    }
+
 }

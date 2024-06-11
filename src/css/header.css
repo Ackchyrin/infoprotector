@@ -129,19 +129,15 @@
 }
 
 .header-mobile{
-    display: flex;
     gap: 8px;
+    display: none;
 }
 
 @media screen and (max-width:1750px){
     .header.active .header-logo{
-        display: block;
-    }
-
-    .header-link__social{
         display: none;
     }
-
+    
     .header-link__login{
         margin: 0;
     }
@@ -153,13 +149,16 @@
     
 }
 
-@media screen and (max-width:1440px){
-    .header-menu__item {
-        font-size: 16px;
-    }
-}
-
 @media screen and (max-width:1280px){
+
+    .header-mobile{
+        display: flex;
+    }
+
+    
+    .header-link__social{
+        display: none;
+    }
 
     .header-menu__burger{
         display: flex;
