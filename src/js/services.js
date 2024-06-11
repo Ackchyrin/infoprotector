@@ -56,6 +56,6 @@ document.querySelectorAll('.services-list__item').forEach(el=>el.addEventListene
     el.querySelector('.service-animation').innerHTML = el.querySelector('.service-animation').innerHTML
 }))
 
-
-document.querySelectorAll('meta')[1].setAttribute('content',"width=device-width, initial-scale=1")
-alert('asd')
+if(window.screen.width > 860){
+    document.querySelectorAll('meta')[1].setAttribute('content',"width=device-width, initial-scale=1")
+}

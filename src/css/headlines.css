@@ -100,15 +100,15 @@
     display: none;
 }
 
-/* @media screen and (max-width:1800px){ */
+@media screen and (max-width:1800px){
 
     .headlines-info{
         margin-left: auto;
     }
 
-/* } */
+}
 
-/* @media screen and (max-width:1280px){ */
+@media screen and (max-width:1280px){
 
     .headlines{
         max-width: 92%;
@@ -153,9 +153,9 @@
         padding: 15px 15px;
     }
 
-/* } */
+}
 
-/* @media screen and (max-width:1280px){ */
+@media screen and (max-width:1280px){
 
     .headlines-info__title{
         margin: 0;
@@ -176,9 +176,10 @@
         width: fit-content;
     }
 
-/* } */
+}
 
-/* @media screen and (max-width:880px){ */
+@media screen and (max-width:880px){
+
     
     .headlines{
         gap: 24px;
@@ -244,4 +245,4 @@
         width: 100%;
     }
 
-/* } */
+}

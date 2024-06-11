@@ -188,7 +188,7 @@
     display: none;
 }
 
-/* @media screen and (max-width:1620px){ */
+@media screen and (max-width:1620px){
 
     .registration{
         margin: 50px auto 0 auto;
@@ -196,9 +196,9 @@
         width: 100%;
     }
 
-/* } */
+}
 
-/* @media screen and (max-width:1200px){ */
+@media screen and (max-width:1200px){
 
     .registration-info__attemption{
         display: none;
@@ -275,4 +275,4 @@
         line-height: 21.33px;
     }
 
-/* } */
+}
