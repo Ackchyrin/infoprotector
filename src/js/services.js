@@ -48,17 +48,10 @@ const svgAnim = [
     '<svg id="lucide:circle-plus" width="110" height="110" viewBox="0 0 110 110" fill="none" xmlns="http://www.w3.org/2000/svg" style="max-width: 100%; max-height: 100%;"><path d="M55.0001 100.833C80.3131 100.833 100.833 80.3131 100.833 55C100.833 29.687 80.3131 9.16669 55.0001 9.16669C29.687 9.16669 9.16675 29.687 9.16675 55C9.16675 80.3131 29.687 100.833 55.0001 100.833Z" stroke="#FEC400" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="0,0,0,288.01873779296875"><animate attributeType="XML" attributeName="stroke-dasharray" repeatCount="1" dur="0.6756756756756757s" values="0,0,0,288.01873779296875; 0,144.00936889648438,144.00936889648438,0; 288.01873779296875,0,0,0" keyTimes="0; 0.5; 1" fill="freeze"></animate></path><path d="M36.6667 55H73.3334M55.0001 36.6667V73.3334" stroke="#FEC400" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="0,0,0,73.3333969116211"><animate attributeType="XML" attributeName="stroke-dasharray" repeatCount="1" dur="0.6756756756756757s" values="0,0,0,73.3333969116211; 0,36.66669845581055,36.66669845581055,0; 73.3333969116211,0,0,0" keyTimes="0; 0.5; 1" fill="freeze"></animate></path></svg>'
 ]
 
-let hiddemEl = []
-
-document.querySelectorAll('.service-animation').forEach(el=>{
-    hiddemEl.push(el.innerHTML)
+document.querySelectorAll('.service-animation').forEach((el,index)=>{
+    el.innerHTML = svgAnim[index]
 })
 
-document.querySelectorAll('.services-list__item-visible').forEach((el,index)=>el.addEventListener('mouseenter',()=>{
-    el.querySelector('.service-animation').innerHTML = svgAnim[index]
+document.querySelectorAll('.services-list__item').forEach(el=>el.addEventListener('mouseenter',()=>{
+    el.querySelector('.service-animation').innerHTML = el.querySelector('.service-animation').innerHTML
 }))
-
-document.querySelectorAll('.services-list__item-visible').forEach((el,index)=>el.addEventListener('mouseleave',()=>{
-    el.querySelector('.service-animation').innerHTML = hiddemEl[index]
-}))
-

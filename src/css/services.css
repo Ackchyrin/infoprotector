@@ -205,6 +205,15 @@
     justify-content: center;
 }
 
+.service-animation svg path{
+    stroke: #808E9B;
+    transition: stroke .4s;
+}
+
+.services-list__item:hover svg path{
+    stroke: #FEC400;
+}
+
 @media screen and (max-width:1620px){
 
     .services{
