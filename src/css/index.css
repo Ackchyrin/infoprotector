@@ -11,3 +11,10 @@ body{
 html{
     width: 1920px;
 }
+
+
+@media screen and (max-width:500px) {
+    body{
+        opacity: .4;
+    }
+}
