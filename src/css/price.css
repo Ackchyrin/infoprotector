@@ -194,7 +194,7 @@
     display: none;
 }
 
-@media screen and (max-width:1620px){
+/* @media screen and (max-width:1620px){ */
 
     .price{
         margin: 50px auto 0 auto;
@@ -206,18 +206,18 @@
         flex-basis: 23%;
     }
 
-}
+/* } */
 
-@media screen and (max-width:1280px){
+/* @media screen and (max-width:1280px){ */
 
     .price-title{
         flex-direction: column;
         gap: 16px;
     }
 
-}
+/* } */
 
-@media screen and (max-width:1200px){
+/* @media screen and (max-width:1200px){ */
 
     .price-button{
         display: none;
@@ -318,5 +318,5 @@
         padding: 0 10px 10px;
     }
 
-}
+/* } */
 
