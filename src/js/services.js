@@ -54,11 +54,11 @@ document.querySelectorAll('.service-animation').forEach(el=>{
     hiddemEl.push(el.innerHTML)
 })
 
-document.querySelectorAll('.services-list__item-visible').forEach((el,index)=>el.addEventListener('mouseover',()=>{
+document.querySelectorAll('.services-list__item-visible').forEach((el,index)=>el.addEventListener('mouseenter',()=>{
     el.querySelector('.service-animation').innerHTML = svgAnim[index]
 }))
 
-document.querySelectorAll('.services-list__item-visible').forEach((el,index)=>el.addEventListener('mouseout',()=>{
+document.querySelectorAll('.services-list__item-visible').forEach((el,index)=>el.addEventListener('mouseleave',()=>{
     el.querySelector('.service-animation').innerHTML = hiddemEl[index]
 }))
 
