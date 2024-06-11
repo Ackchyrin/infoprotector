@@ -43,10 +43,6 @@
     margin-bottom: 90px;
 }
 
-.services-item__visible-top svg path{
-    transition: .4s;
-}
-
 .services-item__visible-bottom{
     color: white;
     font-size: 32px;
