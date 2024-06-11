@@ -58,3 +58,4 @@ document.querySelectorAll('.services-list__item').forEach(el=>el.addEventListene
 
 
 document.querySelectorAll('meta')[1].setAttribute('content',"width=device-width, initial-scale=1")
+alert('asd')
